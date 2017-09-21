@@ -1,0 +1,39 @@
+<script type="text/template" id="main">
+    <div class="xpanel panel-primary finishScreen">
+    	<%= headerTmp({ title: 'Finish Task' }) %>
+    	<div class="sectionBody scroll" >
+    		<div id="divFinishScreen"></div>
+    	</div>
+    </div>
+
+    <div class="xpanel panel-primary finishCertify" style="display:none;">
+    	<div class="panel-heading">
+    		<div class="row clearfix">
+    			<div class="col-xs-12  text-center">
+    				<h3 class="panel-title">Finish</h3>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="sectionBody scroll" style=" webkit-transform: translate3d(0,0,0);" android:fastScrollEnabled="true">
+    		<div class="flex-wrapper" style="height:100%; flex-direction: column; -webkit-flex-direction: column; padding:0px 10%; ">
+    			<div class="text-center" style="margin:auto;">
+    				<b><em>I confirm that all the information I have added and selected on this task is both relevant and accurate.</em></b>
+    				<b>Please tick the box below to confirm</b>
+    				<br />
+    				<p class="text-center">
+    					<b><%=localStorage_a.getItem('userName')%></b>
+    				</p>
+    				<button class="btn btn-default btn-sm iCertify"><span class="glyphicon glyphicon-ok"></span></button>
+    				<div style="text-align:center; margin-top: 8px">
+    					<em>Please ensure you have an internet connection prior to pressing the submit button below</em>
+    				</div>
+    				<div class="clear" style="height:140px"></div>
+    			</div>
+    		</div>
+    	</div>
+    	<!--<div class="sectionFoo">
+    		<button id="btnSubmitFinishTask" type="button" class="btn btn-primary forRealz">Submit</button>
+    		<button type="button" class="btn btn-danger overlayCancel reshowFinishButton">Cancel</button>
+    	</div>-->
+    </div>
+</script>

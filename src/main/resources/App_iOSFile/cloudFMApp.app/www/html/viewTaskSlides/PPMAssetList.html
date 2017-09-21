@@ -1,0 +1,46 @@
+<script type="text/template" id="main">
+    <div class="xpanel panel-primary ppmAssetList">
+    	<%= headerTmp({ title: 'PPM Asset List' }) %>
+    	<div class="divPPMAssetContainer sectionBody scroll"></div>
+    </div>
+    <div class="overlay ov-red" style="display:none; z-index:12003;" id="delegateAssetConfirm">
+    	<div class="overlayFloater">
+    		<div class="xpanel">
+    			<div class="panel-heading">
+    				<div class="row clearfix">
+    					<div class="col-xs-12  text-center">
+    						<h3 class="panel-title">Delegate Asset</h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="sectionBody scroll" style=" webkit-transform: translate3d(0,0,0);" android:fastScrollEnabled="true">
+    				<div class="flex-wrapper" style="height:100%; flex-direction: column; -webkit-flex-direction: column; padding:0px 10%; ">
+    					<div class="" style="margin:auto;">
+    					<strong>If you are working on this task with other engineers then you can delegate assets that others will be working on.<br /><br />
+    						Are you sure you wish to delegate this asset?</strong>
+    					<br />
+    					<br />
+    					<br />
+    					<button type="button" class="btn btn-lg btn-danger  btnDelegateAssetYes">Yes</button>
+    					<button type="button" class="btn btn-lg btn-success btnDelegateAssetNo">No</button>
+    					<div class="clear" style="height:140px"></div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</script>
+
+<script type="text/template/section" id="ppmAssetDetails">
+  <%= $.headerTmp({'title': 'Asset Details', noRight: true, customLeft: 'btnCancelAsset'}) %>
+  <div class="assetcontainer sectionBody scroll list-group" ></div>
+</script>
+
+<script type="text/template/section" id="ppmAssetHistory">
+  <%= $.headerTmp({'title': 'Asset History', noRight: true, customLeft: 'btnBackToAsset'}) %>
+  <div class="assetHistoryContainer sectionBody scroll list-group" ></div>
+</script>
+
+<script type="text/template/section" id="ppmAssetHistoryFull">
+</script>

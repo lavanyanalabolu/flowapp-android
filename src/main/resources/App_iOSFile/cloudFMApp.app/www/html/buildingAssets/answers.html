@@ -1,0 +1,6 @@
+<label> <%=qna[0].question%> </label>
+<select type="text" class="form-control" > 
+   	<% _.each( qna, function( a ) { %>
+   		<option value ="<%=a.answer%>"><%=a.answer%></option>
+   	<% }) %>
+</select>

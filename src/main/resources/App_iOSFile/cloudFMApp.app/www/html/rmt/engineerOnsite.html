@@ -1,0 +1,43 @@
+<% _.each( data , function( e ) { %>
+    <li class="list-group-item">
+        <div class="row">
+            <div class="col-md-1 col-xs-4 text-center vcenter">
+            <% if( !!e.userGuid ) { %>
+                <img  class="img-circle eng" src="https://cloudfmsystems.com/avatar/<%=e.avatarGuid%>.jpg" width="80px" height="80px">
+            <% } %>
+            </div>
+            <div class="col-md-11 col-xs-8" style="padding-left: 0px;">
+                <span>
+                    <strong>
+						<%=e.engineerName%>
+						<span class="pull-right">
+							<%
+							var hoursOnSite = parseInt(e.onSite)/60;
+					    		if(e.checkedOut5MinsAgo>0){
+					    			%>
+					    				<span class="badge badge-success" style="font-size: 11px"><%=e.closingStatus%> : <%=hoursOnSite.toFixed(1)%>h</span>
+					    			<%
+					    		} else {
+					    			%>
+					    				<span class="badge info" style="font-size: 11px">Started : <%=hoursOnSite.toFixed(1)%>h ago</span>
+					    			<%
+					    		}
+					    	%>
+						</span>
+						<br>
+					</strong>
+					<span >  <%=e.clientName%> / <%=e.building%></span> <br>
+					<span>
+						Task <span class="pull-right"><%=e.taskNum%></span><br>
+					</span>
+					<span ><%=e.discipline === 'Proactive Maintenance Visits' ? 'PMV' : e.discipline %>
+						<span class="pull-right"> <%=e.taskType%></span>
+					<br></span>
+					<span> Arrived <span class="pull-right"><%=e.arriveDate%></span><br>
+                </span>
+            </div>
+
+        </div>
+    </li>
+<% }) %>
+<br>

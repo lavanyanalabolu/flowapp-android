@@ -1,0 +1,78 @@
+
+<div class="xpanel panel-primary">
+	<div class="panel-heading">
+		<div class="row clearfix">
+	  		<div class="col-xs-3"> </div>
+	  		<div class="col-xs-6 text-center">Begin / End Day </div>
+	  		<div class="col-xs-3">
+	  			<span class="pull-right"> <%=slide.no%> / <%=slide.max%></span>
+	  		</div>
+	  	</div>
+	</div>
+	<div class="sectionBody scroll list-group" style="" android:fastScrollEnabled="true">
+	<ul class="list-group">
+		<li class="list-group-item" >
+			<div class="row" style="padding:8px;">
+				<div class="col-md-1 col-xs-4 text-center">
+					<img src="https://cloudfmsystems.com/avatar/<%=$.getAppPermissionByName('avatarGuid')%>.jpg" class="img-circle " width="80px" height="80px">
+				</div>
+				<div class="col-md-11 col-xs-8">
+					<h3 style="margin-top: 12px;margin-bottom: 0px;"><%=localStorage_a.getItem('userName')%>
+					<% if ( model.dayLengthHours ) { %>
+						<span class="pull-right small" style="padding-right:25px;">
+						 	Today : <%=model.dayLengthHours%> Hours
+						</span>
+					<% } %>
+					</h3>
+				</div>
+			</div>
+		</li>
+		<% if ( model.beginDay ) { %>
+			<li class="list-group-item ep">
+	 			Day start  <span class="pull-right"><%=model.beginDay%></span>
+			</li>
+		<% } %>
+		<% if ( model.endDay ) { %>
+			<li class="list-group-item ep">
+	 			Day end  <span class="pull-right"><%=model.endDay%></span>
+			</li>
+		<% } %>
+		<% if ( model.dayLengthHours ) { %>
+			<li class="list-group-item ep text-center">
+	 			<%=model.messageText%>
+			</li>
+		<% } %>
+		<% if ( model.beginDay  && model.endDay ) { %>
+			<li class="list-group-item ep text-center">
+				<button class="btn btn-success btn-block btn-lg newDay">Start a new day </button>
+			</li>
+		<% } %>
+		<% if ( !model.beginDay ) { %>
+			<li class="list-group-item ep text-center">
+				<div class="input-group">
+				  <span class="input-group-addon" style="white-space: nowrap;">Vehicle Odometer</span>
+				  <input type="number" class="form-control" name="startOdm">
+				</div>
+			</li>
+			<li class="list-group-item ep text-center">
+				<button class="btn btn-block btn-lg btn-success startDay">Begin Day</button>
+			</li>
+		<% } %>
+		<% if ( model.beginDay && !model.endDay ) { %>
+			<li class="list-group-item ep text-center">
+				<div class="input-group">
+				  <span class="input-group-addon" style="white-space: nowrap;">Vehicle Odometer</span>
+				  <input type="number" class="form-control" name="endOdm">
+				</div>
+			</li>
+			<li class="list-group-item ep text-center">
+				<button class="btn btn-block btn-lg btn-success endDay">End Day</button>
+			</li>
+		<% }  %>
+			<li class="list-group-item text-center">
+				<a type="button" class="btnTimesheet btn btn-primary btn-block btn-lg" href="#timesheets"><span class="glyphicon glyphicon-align-justify"></span> Timesheet</a>
+			</li>
+
+		</ul>
+	</div>
+</div>

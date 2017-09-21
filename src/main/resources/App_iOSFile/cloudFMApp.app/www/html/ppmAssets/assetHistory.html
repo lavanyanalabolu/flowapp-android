@@ -1,0 +1,43 @@
+<% _.each( history, function( h) { %>
+	<li class="list-group-item list-group-item-default showAssetHistory" data-historyid ='<%=h.task_asset_link_id%>'>
+		Serviced: <%=moment(h.serviced_on).format('lll')%>  
+		<span class="pull-right">
+			<span class="glyphicon glyphicon-chevron-right" ></span>
+		</span>
+	</li>
+<!-- 	<li class="list-group-item list-group-item-default">
+		Serviced by: <%=h.serviced_by_engineer%>
+		<small><span class="pull-right"><%=moment(h.serviced_on).format('lll')%></span></small>
+	</li>
+	<li class="list-group-item">
+		Service interval: 
+		<span class="pull-right"><%=h.service_interval%></span>
+	</li>
+	<li class="list-group-item">
+		Is operational ? 
+		<span class="pull-right">
+			<% if ( h.operational === 1 ) { %>
+				<span class="glyphicon glyphicon-ok" style="color : #6DB76D; " ></span>
+			<% } else  { %>
+				<span class="glyphicon glyphicon-remove" style="color : #C12E2A; " ></span>
+			<% } %>
+		</span>
+	</li>
+	<li class="list-group-item">
+		Condition: 
+		<span class="pull-right"><%=h.condition%></span>
+	</li>
+	<li class="list-group-item">
+		Past Service: 
+		<span class="pull-right">
+			<% if ( h.PassFail === 1 ) { %>
+				<span class="label label-success">Pass</span>
+			<% } else  { %>
+				<span class="label label-danger">Fail</span>
+			<% } %>
+		</span>
+	</li>
+	<li class="list-group-item">
+		<%=h.comments%>
+	</li> -->
+<% }) %>

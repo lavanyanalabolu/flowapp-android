@@ -1,0 +1,16 @@
+<% _.each( oddJobs, function( oj ) { %>
+    <li class="list-group-item">
+        <h4 class="list-group-item-heading ojHeader-t">Status:
+            <span class="pull-right"><%=oj.Clip_Status%></span>
+        </h4>
+        <p class="list-group-item-text ojHeader-b">
+            <small>
+                Created by: <%=oj.Clip_CreatedBy%>
+                <span class="pull-right">
+                    <%=oj.createdDate%>
+                </span>
+            </small>
+        </p>
+        <p class="list-group-item-text"><%= oj.Clip_Description %></p>
+    </li>
+<% }) %>

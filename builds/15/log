@@ -1,0 +1,14 @@
+Started by user [8mha:////4JN4mPVPN/m7grRuhezi/af5fbL6b7nE2OxuXAZL8WJPAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace D:\framework\framework\VWO_APP
+[VWO_APP] $ cmd /c call C:\Users\Nitin\AppData\Local\Temp\hudson7258412722978545560.bat
+
+D:\framework\framework\VWO_APP>cd Desktop 
+The system cannot find the path specified.
+
+D:\framework\framework\VWO_APP>genymotion.bat
+'genymotion.bat' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\framework\framework\VWO_APP>exit 9009 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

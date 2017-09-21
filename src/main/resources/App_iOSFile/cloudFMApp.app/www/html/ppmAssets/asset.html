@@ -1,0 +1,160 @@
+<!-- <ul class="list-group"> -->
+	<li class="list-group-item">
+		<span style="text-align:center;"><b><%=assName%></b></span>
+	</li>
+	<li class="list-group-item">
+		Service Interval <span class="pull-right"><%=serviceInterval%> (<%=majMin%>)</span>
+	</li>
+	<li class="list-group-item">
+		Manufacturer <span class="pull-right"><%=assManu%></span>
+	</li>
+	<li class="list-group-item">
+		Model <span class="pull-right"><%=assModel%></span>
+	</li>
+	<li class="list-group-item">
+		Serial No <span class="pull-right"><%=assSerial%></span>
+	</li>
+
+	<li class="list-group-item list-group-item-default assetHistory" data-assetID="<%=assetID%>">
+		History	<span class="glyphicon glyphicon-chevron-right pull-right" ></span>
+	</li>
+	<li class="list-group-item">
+		Location <span class="pull-right"><%=assLocation%></span>
+	</li>
+	<li class="list-group-item list-group-item-default" >
+		Status of asset after service
+	</li>
+	<li class="list-group-item">
+		<div class="row" >
+		  <div class="col-xs-6 col-sm-4 col-md-3">
+			<div class="btn-group-vertical">
+				<button data-status="Complete" data-talID="<%=talID%>" class="btnChooseAssetStatus btnAssetStatusComplete btn <%if(status!='Complete') {print('btn-default');}else{print('btn-primary');}%>" >Complete</button>
+				<button data-status="QuoteRequired" data-talID="<%=talID%>" class="btnChooseAssetStatus btnAssetStatusQuoteRequired btn <%if(status!='QuoteRequired') {print('btn-default');}else{print('btn-primary');}%>" >Quote Required</button>
+				<button data-status="Removed" data-talID="<%=talID%>" class="btnChooseAssetStatus btnAssetStatusRemoved btn <%if(status!='Removed') {print('btn-default');}else{print('btn-primary');}%>" >Removed</button>
+				<button data-status="Condemned" data-talID="<%=talID%>" class="btnChooseAssetStatus btnAssetStatusCondemned btn <%if(status!='Condemned') {print('btn-default');}else{print('btn-primary');}%>" >Condemned</button>
+				<button data-status="NoAccess" data-talID="<%=talID%>" class="btnChooseAssetStatus btnAssetStatusNoAccess btn <%if(status!='NoAccess') {print('btn-default');}else{print('btn-primary');}%>" >No Access</button>
+			</div>
+		  </div>
+		  <div class="col-xs-6 col-sm-8 col-md-9">
+				<div id="divAssetStatusTextComplete" class="divAssetStatusText" style="display:<%if(status!=='Complete') print('none');%>">
+					Asset has been serviced as per the specified service interval. No further action required until next service due
+				</div>
+				<div id="divAssetStatusTextQuoteRequired" class="divAssetStatusText" style="display:<%if(status!=='QuoteRequired') print('none');%>">
+					Asset has been serviced but engineer concludes that a quote is required.
+				</div>
+				<div id="divAssetStatusTextRemoved" class="divAssetStatusText" style="display:<%if(status!=='Removed') print('none');%>">
+					Asset has been removed so should also be removed from service list.
+				</div>
+				<div id="divAssetStatusTextCondemned" class="divAssetStatusText" style="display:<%if(status!=='Condemned') print('none');%>">
+					Asset is beyond serviceable repair.
+				</div>
+				<div id="divAssetStatusTextNoAccess" class="divAssetStatusText" style="display:<%if(status!=='NoAccess') print('none');%>">
+					Engineer was unable to gain access to the asset and a return visit is necessary to complete the service.
+				</div>
+		  </div>
+		</div>
+	</li>
+	<li class="list-group-item list-group-item-default" >
+		Is asset operational?
+	</li>
+	<li class="list-group-item">
+	<!-- 	<h4 > </h4> -->
+		<div class="btn-group-vertical yesNoRadioCheck" style="width:100%">
+
+      <div class="input-label btn btn-success" >Fully operational <input type="radio" value="1" name="operational" data-talid="<%=talID%>" class="<%=talID%> glyphicon" <%= parseInt(operational) === 1 ? 'checked' : '' %> /></div>
+
+
+      <div class="input-label btn btn-warning" >Operational but needs attention <input type="radio" value="2" name="operational" data-talid="<%=talID%>" class="<%=talID%> glyphicon" <%= parseInt(operational) === 2 ? 'checked' : '' %> /></div>
+
+
+      <div class="input-label btn btn-danger" >Not operational <input type="radio" value="0" name="operational" data-talid="<%=talID%>" class="<%=talID%> glyphicon" <%= parseInt(operational) === 0 ? 'checked' : '' %> /></div>
+
+    </div>
+		<!--<% 	if( operational == null ) { %>
+				<div class="btn-group">
+					<button data-operational="Y" data-talID="<%=talID%>" class="btnChooseAssetOperational btnAssetOperationalY btn btn-default" >Yes</button>
+				</div>
+				<div class="btn-group">
+					<button data-operational="N" data-talID="<%=talID%>" class="btnChooseAssetOperational btnAssetOperationalN btn btn-default" >No</button>
+				</div>
+		<%	} else { %>
+				<div class="btn-group">
+					<% if( operational == 'Y') { %>
+						<button data-operational="Y" data-talID="<%=talID%>" class="btnChooseAssetOperational btnAssetOperationalY btn btn-primary" >Yes</button>
+					<% } else { %>
+						<button data-operational="Y" data-talID="<%=talID%>" class="btnChooseAssetOperational btnAssetOperationalY btn btn-default" >Yes</button>
+					<%	} %>
+				</div>
+				<div class="btn-group">
+					<% if( operational == 'N') { %>
+						<button data-operational="N" data-talID="<%=talID%>" class="btnChooseAssetOperational btnAssetOperationalN btn btn-primary" >No</button>
+					<% } else { %>
+						<button data-operational="N" data-talID="<%=talID%>" class="btnChooseAssetOperational btnAssetOperationalN btn btn-default" >No</button>
+					<%	} %>
+
+				</div>
+			<% 	} %>-->
+		</div>
+	</li>
+	<li class="list-group-item list-group-item-default" >
+		Condition after service: <span class="assetConditionSet<%=talID%>"></span>
+	</li>
+	<li class="list-group-item">
+		<div class="from-group">
+			<select class="form-control chooseAssetCondition"  data-talID="<%=talID%>" >
+				<option selected="selected"></option>
+
+	  			<option value="Poor">Poor</option>
+	  			<option value="Fair">Fair</option>
+	  			<option value="Good">Good</option>
+	  			<option value="Excellent">Excellent</option>
+	  			<option value="New">New</option>
+	  			<option value="Another Contractor Required">Another Contractor Required</option>
+
+	  		</select>
+	  	</div>
+	</li>
+	<li class="list-group-item list-group-item-default" >
+		Is asset compliant?
+	</li>
+	<li class="list-group-item">
+		<!-- <h4 > </h4> -->
+		<%
+		if ( compliant == "" && PassFail !== '' ) {
+		 	compliant = ( PassFail == 'Pass' ) ?  'Y' : 'N';
+		}
+		%>
+		<div class="btn-group btn-group-justified">
+
+			<% if( compliant =="" ) { %>
+				<div class="btn-group">
+					<div data-compliant="Y" data-talID="<%=talID%>" class="btnChooseAssetCompliant btnAssetCompliantY btn btn-default" >Yes</div>
+				</div>
+				<div class="btn-group">
+					<div data-compliant="N" data-talID="<%=talID%>" class="btnChooseAssetCompliant btnAssetCompliantN btn  btn-default" >No</div>
+				</div>
+			<% } else { %>
+				<div class="btn-group">
+					<% if( compliant == 'Y'  ) { %>
+						<div data-compliant="Y" data-talID="<%=talID%>" class="btnChooseAssetCompliant btnAssetCompliantY  btn btn-primary" >Yes</div>
+					<% } else { %>
+						<div data-compliant="Y" data-talID="<%=talID%>" class="btnChooseAssetCompliant btnAssetCompliantY btn btn-default" >Yes</div>
+					<%	} %>
+				</div>
+				<div class="btn-group">
+					<% if( compliant == 'N'  ) { %>
+						<div data-compliant="N" data-talID="<%=talID%>" class="btnChooseAssetCompliant btnAssetCompliantN btn  btn-primary" >No</div>
+					<% } else { %>
+						<div data-compliant="N" data-talID="<%=talID%>" class="btnChooseAssetCompliant btnAssetCompliantN btn  btn-default" >No</div>
+					<%	} %>
+				</div>
+			<%	} %>
+		</div>
+
+	</li>
+	<li class="list-group-item list-group-item-default">
+		Details of service
+	</li>
+	<li class="list-group-item" style="padding: 0px 0px;">
+		<textarea style="width:100%;border : none;" rows="4" class="form-control txtAssetDetails" id="txtAssetDetails<%=talID%>" placeholder="Enter optional details of service on this asset" data-talID="<%=talID%>"><%=comments%></textarea>
+	</li>

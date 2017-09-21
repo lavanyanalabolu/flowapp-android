@@ -1,0 +1,64 @@
+Started by user [8mha:////4JN4mPVPN/m7grRuhezi/af5fbL6b7nE2OxuXAZL8WJPAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace D:\framework\framework\VWO_APP
+[VWO_APP] $ cmd /c call C:\Users\Nitin\AppData\Local\Temp\hudson1435463705997944745.bat
+
+D:\framework\framework\VWO_APP>mvn test 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Mobile Automation Project 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Mobile_Automation_Framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.1:compile (default-compile) @ Mobile_Automation_Framework ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Mobile_Automation_Framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.1:testCompile (default-testCompile) @ Mobile_Automation_Framework ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ Mobile_Automation_Framework ---
+[INFO] Surefire report directory: D:\framework\framework\VWO_APP\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+	LOG-: [*********************New Suite Started********************* -  2017-02-09 16:13:13 PM] 
+	LOG-: [Platform Name:-Android -  2017-02-09 16:13:14 PM] 
+	LOG-: [App Package Name:-com.cloudfmgroup.cloudFMApp -  2017-02-09 16:13:14 PM] 
+	LOG-: [App Version Name:-6.4.3 -  2017-02-09 16:13:14 PM] 
+	LOG-: [App Activity Name:-com.cloudfmgroup.cloudFMApp.MainActivity -  2017-02-09 16:13:14 PM] 
+	LOG-: [**********Device Connected********* -  2017-02-09 16:13:14 PM] 
+	LOG-: [Device Version is:-6.0.1 -  2017-02-09 16:13:14 PM] 
+	LOG-: [**********Waiting for Appium to get started********** -  2017-02-09 16:13:20 PM] 
+Process leaked file descriptors. See http://wiki.jenkins-ci.org/display/JENKINS/Spawning+processes+from+build for more information
+Build step 'Execute Windows batch command' marked build as failure
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 14.132 s
+[INFO] Finished at: 2017-02-09T16:13:24+05:30
+[INFO] Final Memory: 13M/220M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project Mobile_Automation_Framework: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test failed: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?
+[ERROR] Command was cmd.exe /X /C ""C:\Program Files\Java\jdk1.8.0_92\jre\bin\java" -jar D:\framework\framework\VWO_APP\target\surefire\surefirebooter3787938835729466613.jar D:\framework\framework\VWO_APP\target\surefire\surefire4306585444091568904tmp D:\framework\framework\VWO_APP\target\surefire\surefire_04480571855259394144tmp"
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+Finished: FAILURE

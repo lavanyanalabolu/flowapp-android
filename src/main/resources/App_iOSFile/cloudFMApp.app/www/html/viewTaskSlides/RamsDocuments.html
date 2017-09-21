@@ -1,0 +1,34 @@
+<div class="xpanel panel-primary" id="rams" >
+	<!-- <div style="padding: 11px 6px; border-bottom:1px solid rgba(38, 93, 124, .5);"> -->
+	<!--<div class="panel-heading">
+		<div class="row clearfix">
+			<div class="col-xs-12  text-center">
+				<h3 class="panel-title">RAM Documents</h3>
+			</div>
+		</div>
+	</div>-->
+	<%= headerTmp({ title: 'Rams Documents' }) %>
+	<div class="sectionBody scroll" id="riskcon" style=" webkit-transform: translate3d(0,0,0);" android:fastScrollEnabled="true">
+		<div class="list-group-item list-group-item-default">Please select the correct RAMs relevant to this task:</div>
+		<% _.each(currentTask.ramDocs, function(ob, id){ %>
+		<div class="list-group-item row-same-height taskRams <%= ob.selected ? 'list-group-item-success': 'list-group-item-transparent text-primary' %>" data-name="<%= ob.ramsGUID %>" style="text-align:left" data-selected="<%= +ob.selected %>" >
+			<div data-taskRisk=""  class="q taskRisk col-xs-10 col-xs-height col-full-height" style="">
+				<%= ob.ramsName %>
+			</div>
+
+			<div class="text-center col-xs-2 col-xs-height col-full-height" style="text-align: right;">
+
+					<span style="visibility:visible; margin-right:0px" class="glyphicon glyphicon-ok <%= ob.selected ? '' : ' text-default' %>"></span>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+		<% })%>
+
+
+	</div><!--
+	<div class="sectionFoo navbar-default">
+		<button type="button" class="btn btn-primary continueBtn">Continue</button><br/>
+		<div class="clear" style="margin-bottom:10px;"></div>
+	</div> -->
+</div>

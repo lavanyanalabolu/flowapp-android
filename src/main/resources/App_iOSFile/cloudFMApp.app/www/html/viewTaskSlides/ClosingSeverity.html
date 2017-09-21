@@ -1,0 +1,41 @@
+
+<div class="xpanel panel-primary">
+
+	<%= headerTmp({	title: 'Closing Severity' }) %>
+
+	<div class="sectionBody scroll list-group" >
+		<div class="list-group-item list-group-item-default text-center" style="padding-left:0px;padding-right:0px;">
+			Please specify severity of this task after this visit.
+		</div>
+		<div class="list-group-item ">
+			<div class="btn-group-vertical" style="width:100%;">
+				<%
+			  		var sevG = 'hidden';
+			  		var sevA = 'hidden';
+			  		var sevR = 'hidden';
+			  		try{
+			  			if(currentTask.finishTask.worksSeverity){
+
+			  				switch(currentTask.finishTask.worksSeverity) {
+			  					case 'G':
+			  						sevG = 'visible';
+			  						break;
+			  					case 'A':
+			  						sevA = 'visible';
+			  						break;
+			  					case 'R':
+			  						sevR = 'visible';
+			  						break;
+			  				}
+			  			}
+			  		} catch(e){
+
+			  		}
+				%>
+				<button data-worksSeverity="G" class="btnSeverity btn btn-lg btn-success" style="border-radius:4px;margin-bottom:10px;width:98%;margin-left:1%;">All Good <span style="visibility:<%=sevG%>;" class="glyphicon glyphicon-ok"></span></button>
+				<button data-worksSeverity="A" class="btnSeverity btn btn-lg btn-warning" style="border-radius:4px;margin-bottom:10px;width:98%;margin-left:1%;">Needs Attention <span style="visibility:<%=sevA%>;" class="glyphicon glyphicon-ok"></span></button>
+				<button data-worksSeverity="R" class="btnSeverity btn btn-lg btn-danger" style="border-radius:4px;width:98%;margin-left:1%;">Major Problem <span style="visibility:<%=sevR%>;" class="glyphicon glyphicon-ok"></span></button>
+			</div>						
+		</div>
+	</div>
+</div>

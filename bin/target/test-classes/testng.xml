@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CommunityMatrimony Test Automation Suite" >
+
+<!-- All tests will show in Report  -->
+
+
+ 
+<test verbose="2" name="TC_CM_001">
+    <classes>
+      <class name="TestingXperts.vwo.tests.TC_CM_001"/>
+      
+     
+        </classes>
+  </test> 
+  
+</suite> <!-- Default suite -->

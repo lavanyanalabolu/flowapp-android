@@ -1,0 +1,157 @@
+<script type="text/template" id="main">
+	<div class="xpanel panel-primary">
+		<%= headerTmp({ title: 'Tap Temperatures' }) %>
+		<div class="sectionBody scroll" >
+			<ul class="list-group fixedinner" style="">
+			</ul>
+		</div>
+	</div>
+</script>
+<script type="text/template" id="tap">
+<%	var cWarn = parseInt(tt.TapDataC) > parseInt(tt.CMax),
+		    hWarn = parseInt(tt.TapDataH) < parseInt(tt.HMin),
+        ocWarn = oldData ? parseInt(oldData.TapDataC) > parseInt(tt.CMax) : false,
+        ohWarn = oldData ? parseInt(oldData.TapDataH) < parseInt(tt.HMin) : false,
+        oldAnd = ocWarn && ohWarn;
+	%>
+	<% if(!!tt.TapUnitID){ %>
+    <form>
+		<li class="list-group-item list-group-item-default" style="border-radius:0px;">
+			<span class="pull-left" style="line-height:32px"><%=tt.TapTempTypeName%> (<%=tt.TapLocation%>)</span>
+			<div class="pull-right" style="line-height:32px">
+				<a class="removeTap <%=tt.myId%>"><span class="glyphicon glyphicon-remove"></span></a>
+			</div>
+			<div class="clear"></div>
+		</li>
+        <% if(oldData){ %>
+        <li class="inline-list-group list-group-item no-pad">
+            <div class="list-group-item list-group-item-default inline-list-group-item grow small">
+                Last recording (<%= moment(oldData.recordDate).format('DD/MM/YYYY') %>):
+                <% if(ocWarn || ohWarn){ %>
+                  <div>Problem with <%= ohWarn?'hot':'' %><%= oldAnd ? ' and ':'' %><%= ocWarn?'cold':'' %> tap!</div>
+                <% } %>
+            </div>
+            <% if(oldData.ColdTap){ %>
+                <div class="list-group-item inline-list-group-item <%=ocWarn? 'list-group-item-warning' : 'list-group-item-info' %>">
+                    <span class="small">C </span><%= oldData.TapDataC %>&deg;C
+                </div>
+            <% } %>
+            <% if(oldData.HotTap){ %>
+                <div class="list-group-item inline-list-group-item <%=ohWarn? 'list-group-item-warning' : 'list-group-item-danger' %>">
+                    <span class="small">H </span><%= oldData.TapDataH %>&deg;C
+                </div>
+            <% } %>
+        </li>
+        <% } %>
+		<li class="list-group-item">
+			<% if( tt.ColdTap ){ %>
+				<div class="tapGroup <%=cWarn?'bg-warning':''%>">
+					<span class="tapCold"></span>
+					<div class="ttig">
+						<div class="input-group">
+							<input type="number" step="0.1" min="0" max="100" placeholder="Enter cold temperature" name="TapDataC" <%= tt.TapDataC !== null ? 'value="'+tt.TapDataC + '"' : '' %> class="ColdTap txtTapTemperatureID<%=tt.tapTemperatureID%> form-control txtTapTemperatureValue <%= tt.myId %>" />
+							<span class="input-group-addon">&deg;C</span>
+						</div>
+					</div>
+
+				</div>
+			<% } %>
+
+			<% if( tt.HotTap ){ %>
+				 <div class="tapGroup <%=hWarn?'bg-warning':''%>">
+					<span class="tapHot"></span>
+					<div class="ttig">
+						<div class="input-group">
+							<input type="number" step="0.1" min="0" max="100" placeholder="Enter hot temperature" name="TapDataH" <%= tt.TapDataH !== null ? 'value="'+tt.TapDataH + '"' : '' %> class="HotTap txtTapTemperatureID<%=tt.tapTemperatureID%> form-control txtTapTemperatureValue <%= tt.myId %>" />
+							<span class="input-group-addon">&deg;C</span>
+						</div>
+					</div>
+				 </div>
+			<% } %>
+			<div class="tapGroup confirmTemp bg-warning" style="text-align:left; <%=!(hWarn || cWarn)?'display:none;' :''%>">
+				<div class="confirmTempText">Press the tick to confirm that the temperature for this tap is outside of the acceptable range.</div>
+
+				<input type="radio" value="1" <%=tt.ConfirmTemp?'checked':''%> name="ConfirmTemp" id="<%=tt.myId%>ConfirmTemp" class="<%= tt.myId %>" />
+				<div class="input-label btn btn-default" ><span style="visibility:visible;" class="glyphicon glyphicon-ok"></span></div>
+
+			</div>
+			<div class="clear"></div>
+		</li>
+    </form>
+	<% }else{ %>
+		<li class="list-group-item list-group-item-info" style="border-radius:0px; border-top-width:2px;">
+			<span class="pull-left" style="line-height:32px">New Tap</span>
+			<div class="pull-right" style="line-height:32px">
+				<a class="removeTap <%=tt.myId%>"><span class="glyphicon glyphicon-remove"></span></a>
+			</div>
+			<div class="clear"></div>
+		</li>
+		<li class="list-group-item list-group-item-default" style="border-radius:0px;">
+			<select name="TapTempTypeID" class="form-control <%= tt.myId %>">
+				<option selected value="">Select tap type</option>
+				<% _.each(tapTempTypes, function(ttt){ %>
+					<option value="<%=ttt.TapTempTypeID%>" ><%= ttt.TapTempTypeName %></option>
+				<% }) %>
+			</select>
+		</li>
+		<li class="list-group-item list-group-item-default" style="border-radius:0px;">
+			<input type="text" placeholder="Enter tap location" name="TapLocation" class="form-control <%= tt.myId %>" />
+		</li>
+		<li class="list-group-item list-group-item-default" style="border-radius:0px;">
+			<div class="tapGroup" >
+				<span class="tapCold"></span>
+				<div style="display:inline-block; width:84%;">
+					<span style="width:50%; display:inline-block; text-align:left">Has cold tap?</span>
+					<div class="btn-group-justified" style="" >
+						<input type="radio" value="1" checked name="ColdTap" id="<%=tt.myId%>cy" class="<%= tt.myId %>" />
+						<div class="input-label btn btn-default" ><span style="visibility:visible;" class="glyphicon glyphicon-ok"></span>&nbsp;yes</div>
+						<input type="radio" value="0" name="ColdTap" id="<%=tt.myId%>cn" class="<%= tt.myId %>" />
+						<div class="input-label btn btn-default" ><span style="visibility:visible;" class="glyphicon glyphicon-remove"></span>&nbsp;no</div>
+					</div>
+				</div>
+			</div>
+			<div class="tapGroup">
+				<span class="tapHot"></span>
+				<div style="display:inline-block; width:84%;">
+					<span style="width:50%; display:inline-block; text-align:left">Has hot tap?</span>
+					<div class="btn-group-justified" style="" >
+						<input type="radio" value="1" checked name="HotTap" id="<%=tt.myId%>hy" class="<%= tt.myId %>" />
+						<div class="input-label btn btn-default" ><span style="visibility:visible;" class="glyphicon glyphicon-ok"></span>&nbsp;yes</div>
+						<input type="radio" value="0" name="HotTap" id="<%=tt.myId%>hn" class="<%= tt.myId %>" />
+						<div class="input-label btn btn-default" ><span style="visibility:visible;" class="glyphicon glyphicon-remove"></span>&nbsp;no</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn-group-justified" style="width:100%; margin-top:10px;" >
+				<div class="btn-group" role="group">
+					<button class="btn btn-success disabled saveTap" id="<%=tt.myId%>">Save Tap</button>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</li>
+	<% } %>
+</script>
+<script type="text/template" id="inner">
+	<li class="list-group-item list-group-item-default" style="border-radius:0px;">
+		When recording tap temperatures in a room with multiple water outlets, please proceed clockwise, from the entrance, around the room and record the tap temperatures.
+		If you are registering multiple water outlets for a room, please also add a number in the location field. eg. 'Kitchen 2'
+	</li>
+    <li class="list-group-item">
+        <% _.each(tapTempTypes.slice(0,2), function(ttt){ n = ttt.TapTempTypeName.toLowerCase() + 's'; %>
+			<p class="text-info">The safe temperature range for cold <%= n %> is below <%= ttt.CMax %>&deg;C.</p>
+			<p class="text-danger">The safe temperature range for hot <%= n %> is above <%=ttt.HMin %>&deg;C.</p>
+		<% }); %>
+    </li>
+    <div id="tapList">
+
+    </div>
+	<%if(!_.where(tapTemperatures, {TapUnitID:null}).length){%>
+		<li class="list-group-item" style="border-radius:0px;">
+			<a class="addTap pull-right">Add Tap <span class="glyphicon glyphicon-plus"></span></a>
+			<div class="clear"></div>
+		</li>
+	<%}%>
+	<!-- <div class="list-group-item">
+		<div class="btn btn-success" style="display:none;" id="spnTapTemperaturesSaved">Thank you. Meter readings have been saved to device.</div>
+	</div> -->
+</script>

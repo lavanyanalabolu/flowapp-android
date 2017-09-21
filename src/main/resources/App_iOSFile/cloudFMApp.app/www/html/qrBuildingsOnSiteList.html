@@ -1,0 +1,18 @@
+
+<%
+window.jb = buildings;
+var uniqBuildings = _.uniq(buildings, function(b){
+	return({k:b.k, b:b.b});
+});
+
+print($.headerTmp({title:'Select a site', noLeft: true, noRight: true }));
+%>
+<ul class="list-group">
+    <%
+    _.each(uniqBuildings, function(b){
+    %>
+        <a class="list-group-item alternateBuildingCheckIn" style="text-align:center;" data-buildingID="<%=b.k%>"><%=b.b%></a>
+    <%
+    })
+    %>
+</ul>
