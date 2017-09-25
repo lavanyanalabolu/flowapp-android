@@ -1,30 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="4" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="537224" started-at="2017-07-25T16:28:38Z" finished-at="2017-07-25T16:37:35Z">
+  <suite name="FunctionalPhase1Priority1" duration-ms="151718" started-at="2017-09-25T15:07:56Z" finished-at="2017-09-25T15:10:28Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="537224" started-at="2017-07-25T16:28:38Z" finished-at="2017-07-25T16:37:35Z">
+    <test name="FunctionalPhase1Priority1-Tests" duration-ms="151718" started-at="2017-09-25T15:07:56Z" finished-at="2017-09-25T15:10:28Z">
       <class name="com.flow.andriod.TC_Flowandriod_001">
-        <test-method status="PASS" signature="TestValidation()[pri:0, instance:com.flow.andriod.TC_Flowandriod_001@1efed156]" test-instance-name="" name="TestValidation" duration-ms="220039" started-at="2017-07-25T21:58:38Z" finished-at="2017-07-25T22:02:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestValidation -->
-      </class> <!-- com.flow.andriod.TC_Flowandriod_001 -->
-      <class name="com.flow.andriod.TC_Flowandriod_002">
-        <test-method status="FAIL" signature="TestValidation()[pri:0, instance:com.flow.andriod.TC_Flowandriod_002@a7e666]" test-instance-name="" name="TestValidation" duration-ms="191242" started-at="2017-07-25T22:02:30Z" finished-at="2017-07-25T22:05:41Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="TestValidation()[pri:0, instance:com.flow.andriod.TC_Flowandriod_001@60d8c9b7]" test-instance-name="" name="TestValidation" duration-ms="66805" started-at="2017-09-25T20:37:56Z" finished-at="2017-09-25T20:39:03Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.59 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.cloudfmgroup.cloudFMApp, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.cloudfmgroup.cloudFMApp, appWaitActivity=com.cloudfmgroup.cloudFMApp.MainActivity, databaseEnabled=false, appActivity=com.cloudfmgroup.cloudFMApp.MainActivity, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: 8f383f48-900a-409b-9c94-2ea54f1af46d
+*** Element info: {Using=xpath, value=//*[@resource-id='com.getflow.tasks.next:id/btn_login']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.flow.andriod.TC_Flowandriod_002.TestValidation(TC_Flowandriod_002.java:63)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.59 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.cloudfmgroup.cloudFMApp, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.cloudfmgroup.cloudFMApp, appWaitActivity=com.cloudfmgroup.cloudFMApp.MainActivity, databaseEnabled=false, appActivity=com.cloudfmgroup.cloudFMApp.MainActivity, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: 8f383f48-900a-409b-9c94-2ea54f1af46d
+*** Element info: {Using=xpath, value=//*[@resource-id='com.getflow.tasks.next:id/btn_login']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Utilities.KeywordUtil.click(KeywordUtil.java:183)
+	at Utilities.AndroidApplicationFunctions.NavigateToLoginPage(AndroidApplicationFunctions.java:42)
+	at com.flow.andriod.TC_Flowandriod_001.TestValidation(TC_Flowandriod_001.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -46,22 +77,305 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestValidation -->
+      </class> <!-- com.flow.andriod.TC_Flowandriod_001 -->
+      <class name="com.flow.andriod.TC_Flowandriod_002">
+        <test-method status="FAIL" signature="TestValidation()[pri:0, instance:com.flow.andriod.TC_Flowandriod_002@48aaecc3]" test-instance-name="" name="TestValidation" duration-ms="64134" started-at="2017-09-25T20:39:12Z" finished-at="2017-09-25T20:40:16Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.54 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.cloudfmgroup.cloudFMApp, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.cloudfmgroup.cloudFMApp, appWaitActivity=com.cloudfmgroup.cloudFMApp.MainActivity, databaseEnabled=false, appActivity=com.cloudfmgroup.cloudFMApp.MainActivity, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: d9fcc5a1-251a-473c-964d-3f0f6b8e4b5e
+*** Element info: {Using=xpath, value=//*[@resource-id='com.getflow.tasks.next:id/btn_login']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.54 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.cloudfmgroup.cloudFMApp, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.cloudfmgroup.cloudFMApp, appWaitActivity=com.cloudfmgroup.cloudFMApp.MainActivity, databaseEnabled=false, appActivity=com.cloudfmgroup.cloudFMApp.MainActivity, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: d9fcc5a1-251a-473c-964d-3f0f6b8e4b5e
+*** Element info: {Using=xpath, value=//*[@resource-id='com.getflow.tasks.next:id/btn_login']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:140)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Utilities.KeywordUtil.click(KeywordUtil.java:183)
+	at Utilities.AndroidApplicationFunctions.NavigateToLoginPage(AndroidApplicationFunctions.java:42)
+	at com.flow.andriod.TC_Flowandriod_002.TestValidation(TC_Flowandriod_002.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestValidation -->
       </class> <!-- com.flow.andriod.TC_Flowandriod_002 -->
       <class name="com.flow.andriod.TC_Flowandriod_003">
-        <test-method status="PASS" signature="TestValidation()[pri:0, instance:com.flow.andriod.TC_Flowandriod_003@68bbe345]" test-instance-name="" name="TestValidation" duration-ms="96857" started-at="2017-07-25T22:05:50Z" finished-at="2017-07-25T22:07:27Z">
+        <test-method status="FAIL" signature="TestValidation()[pri:0, instance:com.flow.andriod.TC_Flowandriod_003@7c0c77c7]" test-instance-name="" name="TestValidation" duration-ms="3486" started-at="2017-09-25T20:40:25Z" finished-at="2017-09-25T20:40:28Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:130)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.InteractsWithApps.closeApp(InteractsWithApps.java:91)
+	at TestNGListeners.CustomListener.afterInvocation(CustomListener.java:228)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeAfterInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:100)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:556)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:699)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestValidation -->
+        <test-method status="FAIL" signature="TestValidation()[pri:0, instance:com.flow.andriod.TC_Flowandriod_003@7c0c77c7]" test-instance-name="" name="TestValidation" duration-ms="3485" started-at="2017-09-25T20:40:25Z" finished-at="2017-09-25T20:40:28Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Unable to create new remote session. desired capabilities = Capabilities [{app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}], required capabilities = Capabilities [{}]
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities = Capabilities [{app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\Cloudfm.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}], required capabilities = Capabilities [{}]
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:83)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:93)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:72)
+	at Utilities.DriverUtil.getAndroidDriver(DriverUtil.java:79)
+	at TestNGListeners.CustomListener.beforeInvocation(CustomListener.java:201)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker$InvokeBeforeInvocationWithoutContextStrategy.callMethod(InvokedMethodListenerInvoker.java:84)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:62)
+	at org.testng.internal.Invoker.runInvokedMethodListeners(Invoker.java:556)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:621)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestValidation -->
       </class> <!-- com.flow.andriod.TC_Flowandriod_003 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- FunctionalPhase1Priority1-Tests -->
+  </suite> <!-- FunctionalPhase1Priority1 -->
 </testng-results>

@@ -58,7 +58,7 @@ import Utilities.sendMail;
 				   if(browserName.equals("N.A."))
 				   {
 				}
-		    
+			   }
 
 		    else if(platformName.equals("IOS"))
 		   
@@ -68,7 +68,7 @@ import Utilities.sendMail;
 						
 				   }
 		         }
-			   }
+			   
 		   }
 	   }
 	   

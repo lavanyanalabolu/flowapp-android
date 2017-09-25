@@ -61,12 +61,12 @@ public class CustomSuiteRunner {
 			
              if( tc.getPlatformName().equalsIgnoreCase("android"))
               {
-            	  platformFlag="com.cloudfm.andriod";
+            	  platformFlag="com.flow.andriod";
 		}
 		else if(tc.getPlatformName().equalsIgnoreCase("ios"))
 		{ 
 			
-			platformFlag="com.cloudfm.ios.tests";
+			platformFlag="com.flow.ios.tests";
 		
 		}
             //Get Package where all tests resides

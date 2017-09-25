@@ -175,11 +175,6 @@ public class DriverUtil extends Utility{
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,Utility.GetValue("automationName"));
 		capabilities.setCapability(MobileCapabilityType.UDID,Utility.GetValue("deviceID"));
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,Utility.GetValue("newCommandTimeout"));
-		capabilities.setCapability(MobileCapabilityType.NO_RESET,true);
-		capabilities.setCapability("app-package", Utility.GetValue("appPackage"));		
-		capabilities.setCapability("app-activity", Utility.GetValue("appActivity"));
-		//capabilities.setCapability("app", Utility.GetValue("apkFilePath"));
-		
 		
 		if(BrowserName.isEmpty())
 		{

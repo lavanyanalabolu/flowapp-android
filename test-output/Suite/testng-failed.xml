@@ -3,18 +3,8 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test">
     <classes>
-      <class name="com.flow.andriod.TC_Flowandriod_001"/>
-      <class name="com.flow.andriod.TC_Flowandriod_002"/>
-      <class name="com.flow.andriod.TC_Flowandriod_003"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_040"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_047"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.flow.andriod.TC_Flowandriod_002">
-        <methods>
-          <include name="TestValidation"/>
-        </methods>
-      </class> <!-- com.flow.andriod.TC_Flowandriod_002 -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

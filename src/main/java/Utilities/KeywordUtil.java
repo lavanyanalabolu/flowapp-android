@@ -120,13 +120,6 @@ public class KeywordUtil extends Utility{
 		return true;
 
 	}
-	
-	public static boolean hideKeyboard()
-	{
-		
-		driver.hideKeyboard();
-		return true;
-	}
 
 
 	public static boolean setValue(String path, String type, String data) {
@@ -493,7 +486,7 @@ public class KeywordUtil extends Utility{
 		for (String contextName : contextNames) {
 			if (contextName.contains("WEBVIEW")){
 				driver.context(contextName);
-			//	System.out.println("switched to webview");
+			//System.out.println("switched to webview");
 				colFlag1=true;
 				break;
 			}
@@ -520,7 +513,10 @@ public class KeywordUtil extends Utility{
 		return colFlag1;
 
 	}
-
+    public static void HideKeyboard()
+     {
+    	driver.hideKeyboard();
+    }
 	public static boolean changeContext(String data)
 	{
 		while(!flag1)

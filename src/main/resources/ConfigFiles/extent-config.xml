@@ -14,10 +14,10 @@
     <protocol>https</protocol>
     
     <!-- title of the document -->
-    <documentTitle>Flow</documentTitle>
+    <documentTitle>Cloudfm</documentTitle>
     
     <!-- report name - displayed at top-nav -->
-    <reportName>Test Automation Report for Flow Application </reportName>
+    <reportName>Test Automation Report for Cloudfm Application </reportName>
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->
     <reportHeadline>-- developed by TestingXperts </reportHeadline>

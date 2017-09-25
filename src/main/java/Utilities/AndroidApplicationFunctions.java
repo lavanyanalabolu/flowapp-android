@@ -132,7 +132,7 @@ public class AndroidApplicationFunctions extends KeywordUtil {
 			logging_step = "write project name ";
 			executeStep(writeInInput(Flow.txt_projectname, AndroidConstants.Common.type_xpath,projName), getClass(), logging_step);
 		
-			KeywordUtil.hideKeyboard();
+			KeywordUtil.HideKeyboard();
 			KeywordUtil.swipevertical();
 			
 			logging_step="assign project to" + projVisibility;

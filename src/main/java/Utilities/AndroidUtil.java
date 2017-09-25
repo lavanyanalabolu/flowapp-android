@@ -56,7 +56,7 @@ public class AndroidUtil extends Utility {
 		Boolean flag = false;
 		size = driver.manage().window().getSize();
 		int startx = (int) (size.width * 0.90);
-		int endx = (int) (size.height * 0.05);
+		int endx = (int) (size.height * 0.10);
 		int starty = size.width / 2;
 		((AppiumDriver) driver).swipe(startx, starty, endx, starty, 3000);
 		Thread.sleep(2000);
@@ -67,33 +67,15 @@ public class AndroidUtil extends Utility {
 		else
 			return false;
 	}
-	
-	@SuppressWarnings("rawtypes")
-	public static Boolean swipeHorizontalForFlow() throws InterruptedException {
-		Boolean flag = false;
-		size = driver.manage().window().getSize();
-		int startx = (int) (size.width * 0.90);
-		int endx = (int) (size.height * 0.05);
-		int starty = size.width / 2;
-		((AppiumDriver) driver).swipe(320, 574, 836, 574, 3000);
-		Thread.sleep(2000);
-		flag = true;
 
-		if (flag)
-			return true;
-		else
-			return false;
-	}
-	
-	
 	@SuppressWarnings("rawtypes")
 	public static Boolean swipeHorizontalleft() throws InterruptedException {
 		Boolean flag = false;
 		size = driver.manage().window().getSize();
 		int startx = (int) (size.width * 0.90);
-		int endx = (int) (size.height * 0.05);
+		int endx = (int) (size.height * 0.10);
 		int starty = size.width / 2;
-		((AppiumDriver) driver).swipe(320, 537, 688, 799, 3000);
+		((AppiumDriver) driver).swipe(endx, starty, startx, starty, 3000);
 		Thread.sleep(2000);
 		flag = true;
 
