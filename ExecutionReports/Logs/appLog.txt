@@ -34787,3 +34787,41 @@
 2017-09-25 20:46:05 INFO  - write the password in password field-PASS 
 2017-09-25 20:46:07 INFO  - click on signin-PASS 
 2017-09-25 20:46:28 INFO  - click on the image-PASS 
+2017-09-26 14:20:56 INFO  - *********************New Suite Started*********************
+2017-09-26 14:20:56 INFO  - Platform Name:-Android
+2017-09-26 14:21:53 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 14:21:53 INFO  - Create a task
+2017-09-26 14:22:20 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 14:22:26 INFO  - allow pop up if visible-PASS 
+2017-09-26 14:22:32 INFO  - write the username in email field-PASS 
+2017-09-26 14:22:36 INFO  - write the password in password field-PASS 
+2017-09-26 14:22:41 INFO  - click on signin-PASS 
+2017-09-26 14:23:02 INFO  - click on the image-PASS 
+2017-09-26 14:24:45 INFO  - null-FAIL 
+2017-09-26 14:24:55 INFO  - Total Time taken in(seconds):239
+2017-09-26 14:25:16 INFO  - **********Test Started:TC_Flowandriod_002**********
+2017-09-26 14:25:16 INFO  - verify subscriber
+2017-09-26 14:25:40 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 14:25:45 INFO  - allow pop up if visible-PASS 
+2017-09-26 14:25:52 INFO  - write the username in email field-PASS 
+2017-09-26 14:25:59 INFO  - write the password in password field-PASS 
+2017-09-26 14:26:01 INFO  - click on signin-PASS 
+2017-09-26 14:26:22 INFO  - click on the image-PASS 
+2017-09-26 14:27:47 INFO  - swipe horizontal-PASS 
+2017-09-26 14:28:09 INFO  - null-FAIL 
+2017-09-26 14:28:19 INFO  - Total Time taken in(seconds):203
+2017-09-26 14:28:38 INFO  - **********Test Started:TC_Flowandriod_003**********
+2017-09-26 14:28:38 INFO  - Verify assignee
+2017-09-26 14:29:01 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 14:29:06 INFO  - allow pop up if visible-PASS 
+2017-09-26 14:29:13 INFO  - write the username in email field-PASS 
+2017-09-26 14:29:20 INFO  - write the password in password field-PASS 
+2017-09-26 14:29:22 INFO  - click on signin-PASS 
+2017-09-26 14:29:41 INFO  - click on the image-PASS 
+2017-09-26 14:29:43 INFO  - click on image2 to change the environment -PASS 
+2017-09-26 14:29:47 INFO  - click on workspace to change it to QA environment -PASS 
+2017-09-26 14:29:51 INFO  - swipe horizontal-PASS 
+2017-09-26 14:29:53 INFO  - click on skip-PASS 
+2017-09-26 14:30:34 INFO  - Notification for assignee recived for Task name:TestTask123-FAIL 
+2017-09-26 14:30:44 INFO  - Total Time taken in(seconds):145
+2017-09-26 14:30:45 INFO  - *********************Suite Ended*********************

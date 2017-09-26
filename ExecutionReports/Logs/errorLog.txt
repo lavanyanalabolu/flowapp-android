@@ -6955,3 +6955,25 @@ Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0
 System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: driver.version: AndroidDriver
 2017-09-25 20:40:28 ERROR - -----------------------------------------------------------------------
+2017-09-26 14:24:55 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.getflow.tasks.next, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\base.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\base.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.getflow.tasks.next, appWaitActivity=com.getflow.tasks.ui.activities.ActFirst, databaseEnabled=false, appActivity=com.getflow.tasks.ui.activities.ActFirst, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: 62172f7d-3718-4a82-8b7b-3cdfd904c670
+*** Element info: {Using=xpath, value=//android.widget.Button[@text='Create']}
+2017-09-26 14:24:55 ERROR - -----------------------------------------------------------------------
+2017-09-26 14:28:19 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.getflow.tasks.next, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\base.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=E:\Lavanya\Cloudfm\Cloudfm\src\main\resources\App_APK\base.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.getflow.tasks.next, appWaitActivity=com.getflow.tasks.ui.activities.ActFirst, databaseEnabled=false, appActivity=com.getflow.tasks.ui.activities.ActFirst, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: e6562505-a831-4d18-909b-f5db1edd94d0
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Skip']}
+2017-09-26 14:28:19 ERROR - -----------------------------------------------------------------------
+2017-09-26 14:30:44 ERROR - expected [true] but found [false]
+2017-09-26 14:30:44 ERROR - -----------------------------------------------------------------------
