@@ -34957,3 +34957,54 @@
 2017-09-26 15:16:47 INFO  - Notification for assignee recived for Task name:TestTask123-FAIL 
 2017-09-26 15:16:56 INFO  - Total Time taken in(seconds):150
 2017-09-26 15:16:58 INFO  - *********************Suite Ended*********************
+2017-09-26 17:32:38 INFO  - *********************New Suite Started*********************
+2017-09-26 17:32:38 INFO  - Platform Name:-Android
+2017-09-26 17:32:39 INFO  - Total Time taken in(seconds):0
+2017-09-26 17:33:06 INFO  - *********************New Suite Started*********************
+2017-09-26 17:33:06 INFO  - Platform Name:-Android
+2017-09-26 17:33:32 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 17:33:32 INFO  - Create a task
+2017-09-26 17:33:44 INFO  - click on the image-PASS 
+2017-09-26 17:33:47 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 17:33:50 INFO  - click more options to see logout -PASS 
+2017-09-26 17:33:52 INFO  - click on logout-PASS 
+2017-09-26 17:33:57 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 17:34:02 INFO  - allow pop up if visible-PASS 
+2017-09-26 17:34:11 INFO  - write the username in email field-PASS 
+2017-09-26 17:34:17 INFO  - write the password in password field-PASS 
+2017-09-26 17:34:19 INFO  - click on signin-PASS 
+2017-09-26 17:34:37 INFO  - click on the image-PASS 
+2017-09-26 17:36:09 INFO  - *********************New Suite Started*********************
+2017-09-26 17:36:09 INFO  - Platform Name:-Android
+2017-09-26 17:36:10 INFO  - Total Time taken in(seconds):1
+2017-09-26 17:37:46 INFO  - *********************New Suite Started*********************
+2017-09-26 17:37:46 INFO  - Platform Name:-Android
+2017-09-26 17:38:13 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 17:38:13 INFO  - Create a task
+2017-09-26 17:38:21 INFO  - *********************New Suite Started*********************
+2017-09-26 17:38:21 INFO  - Platform Name:-Android
+2017-09-26 17:38:22 INFO  - Total Time taken in(seconds):1
+2017-09-26 17:38:26 INFO  - click on the image-PASS 
+2017-09-26 17:38:29 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 17:38:33 INFO  - click more options to see logout -PASS 
+2017-09-26 17:38:35 INFO  - click on logout-PASS 
+2017-09-26 17:38:53 INFO  - *********************New Suite Started*********************
+2017-09-26 17:38:53 INFO  - Platform Name:-Android
+2017-09-26 17:39:19 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 17:39:19 INFO  - Create a task
+2017-09-26 17:39:47 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 17:39:52 INFO  - allow pop up if visible-PASS 
+2017-09-26 17:39:59 INFO  - *********************New Suite Started*********************
+2017-09-26 17:39:59 INFO  - Platform Name:-Android
+2017-09-26 17:40:00 INFO  - Total Time taken in(seconds):1
+2017-09-26 17:40:14 INFO  - *********************New Suite Started*********************
+2017-09-26 17:40:14 INFO  - Platform Name:-Android
+2017-09-26 17:40:40 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 17:40:40 INFO  - Create a task
+2017-09-26 17:41:08 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 17:41:13 INFO  - allow pop up if visible-PASS 
+2017-09-26 17:41:21 INFO  - write the username in email field-PASS 
+2017-09-26 17:41:26 INFO  - write the password in password field-PASS 
+2017-09-26 17:41:28 INFO  - click on signin-PASS 
+2017-09-26 17:41:46 INFO  - click on the image-PASS 
+2017-09-26 17:41:49 INFO  - click on image2 to change the environment -PASS 
