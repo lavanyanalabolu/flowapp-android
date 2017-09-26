@@ -41,18 +41,20 @@ public class ExcelDataUtil  extends Utility{
 
 
 	public static void init(String filePath, String sheetName) {
-
+       System.out.println("in init filepath is "+filePath);
 		String fileExtensionName = filePath.substring(filePath.indexOf("."));
 
 		try {
-
+		     System.out.println("in init filepath is try"+filePath);
 			fs = new FileInputStream(filePath);
 			if (fileExtensionName.equals(".xlsx")) {
+			     System.out.println("in init filepath is try if "+filePath);
 				workbook = new XSSFWorkbook(fs);
 
 			}
 
 			else if (fileExtensionName.equals(".xls")) {
+			     System.out.println("in init filepath is else "+filePath);
 				workbook = new HSSFWorkbook(fs);
 
 			}
