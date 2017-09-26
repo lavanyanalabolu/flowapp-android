@@ -35160,3 +35160,16 @@
 2017-09-26 18:51:00 INFO  - Total Time taken in(seconds):1
 2017-09-26 18:51:02 INFO  - Total Time taken in(seconds):2
 2017-09-26 18:51:04 INFO  - *********************Suite Ended*********************
+2017-09-26 19:31:01 INFO  - *********************New Suite Started*********************
+2017-09-26 19:31:01 INFO  - Platform Name:-Android
+2017-09-26 19:31:19 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 19:31:19 INFO  - Create a task
+2017-09-26 19:31:30 INFO  - click on the image-PASS 
+2017-09-26 19:31:34 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 19:31:37 INFO  - click more options to see logout -PASS 
+2017-09-26 19:31:39 INFO  - click on logout-PASS 
+2017-09-26 19:31:42 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 19:32:36 INFO  - *********************New Suite Started*********************
+2017-09-26 19:32:36 INFO  - Platform Name:-Android
+2017-09-26 19:32:55 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 19:32:55 INFO  - Create a task
