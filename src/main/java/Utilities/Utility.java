@@ -289,6 +289,7 @@ public static boolean invocationflag= false;
 		{
 			Utility.testData = new TestData();
 			Utility.testResult = new TestResults();
+			System.out.println("testcaseid is " +testCaseID);
 			Utility.testData = ExcelDataUtil.getTestDataWithTestCaseID(testCaseID);
 			Utility.testResult.setDateOfExecution(Utility.getDateTime());
 			Utility.testData.setPlatform(CustomListener.platformName);

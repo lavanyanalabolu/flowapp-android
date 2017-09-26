@@ -75,6 +75,7 @@ public class ExcelDataUtil  extends Utility{
 		TestData testdata = new TestData();
 		// Initilize class
 		// Get Path and Sheet Name from Property File
+		System.out.println("testDataSheetName is " +testDataSheetName);
 		init(testDatafilePath, testDataSheetName);
 
 		Iterator<Row> rowIterator = sheet.iterator();
