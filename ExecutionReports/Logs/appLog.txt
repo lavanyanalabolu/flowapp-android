@@ -35352,3 +35352,10 @@
 2017-09-26 20:12:23 INFO  - write the password in password field-PASS 
 2017-09-26 20:12:25 INFO  - click on signin-PASS 
 2017-09-26 20:12:46 INFO  - click on the image-PASS 
+2017-09-26 20:22:26 INFO  - *********************New Suite Started*********************
+2017-09-26 20:22:26 INFO  - Platform Name:-Android
+2017-09-26 20:22:49 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 20:22:49 INFO  - Create a task
+2017-09-26 20:23:17 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 20:23:22 INFO  - allow pop up if visible-PASS 
+2017-09-26 20:23:30 INFO  - write the username in email field-PASS 

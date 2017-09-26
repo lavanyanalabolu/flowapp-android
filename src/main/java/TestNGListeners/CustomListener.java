@@ -44,8 +44,9 @@ import Utilities.sendMail;
 	
 		   try {
 				LogUtil.infoLog(getClass(), "*********************New Suite Started*********************");
-			    platformName=ExcelDataUtil.getColumnValue(System.getProperty("user.dir")+Utility.GetValue("AutomationControlExcelPath"),"Platform(IOS,Android)", "Platform",1);
-			    logStep="Platform Name:-"+platformName;
+			    //platformName=ExcelDataUtil.getColumnValue(System.getProperty("user.dir")+Utility.GetValue("AutomationControlExcelPath"),"Platform(IOS,Android)", "Platform",1);
+				platformName=ExcelDataUtil.getColumnValue("C:\\Users\\Lavanya\\Desktop\\flowapp-android\\src\\main\\resources\\ExcelFiles\\AutomationControlSheet.xls","Platform(IOS,Android)", "Platform",1);
+				logStep="Platform Name:-"+platformName;
 			    LogUtil.infoLog(Utility.class, logStep );
 			 
 		      } catch (Exception e) {
@@ -54,8 +55,9 @@ import Utilities.sendMail;
 		   }
 		   if(platformName.equals("Android"))
 			   {
-				   browserName = ExcelDataUtil.getColumnValue(System.getProperty("user.dir")+Utility.GetValue("AutomationControlExcelPath"),"Browser(Browser,Chrome or N.A. [if running apps])", "Browsers",1);
-				   if(browserName.equals("N.A."))
+				   //browserName = ExcelDataUtil.getColumnValue(System.getProperty("user.dir")+Utility.GetValue("AutomationControlExcelPath"),"Browser(Browser,Chrome or N.A. [if running apps])", "Browsers",1);
+			   browserName = ExcelDataUtil.getColumnValue("C:\\Users\\Lavanya\\Desktop\\flowapp-android\\src\\main\\resources\\ExcelFiles\\AutomationControlSheet.xls","Browser(Browser,Chrome or N.A. [if running apps])", "Browsers",1);
+			   if(browserName.equals("N.A."))
 				   {
 				}
 			   }
