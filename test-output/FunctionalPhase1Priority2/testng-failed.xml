@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FunctionalPhase1Priority2]">
+  <parameter name="Platform" value=""/>
+  <test name="FunctionalPhase1Priority2-Tests">
+    <classes>
+      <class name="com.cloudfm.andriod.Tc_andriod_003"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_006"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_007"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_008"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_009"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_013"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_014"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_015"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_018"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_030"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_032"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_033"/>
+    </classes>
+  </test> <!-- FunctionalPhase1Priority2-Tests -->
+  <test name="FunctionalPhase1Priority2-Tests(failed)">
+    <classes>
+      <class name="com.cloudfm.andriod.Tc_andriod_007">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_007 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_009">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_009 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_015">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_015 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_032">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_032 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_008">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_008 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_013">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_013 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_030">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_030 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_014">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_014 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_006">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_006 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_018">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_018 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_003">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_003 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_033">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_033 -->
+    </classes>
+  </test> <!-- FunctionalPhase1Priority2-Tests(failed) -->
+</suite> <!-- Failed suite [FunctionalPhase1Priority2] -->
