@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 5 failed,   1 passed</span>
+                    <span class="method-stats">6 methods, 6 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,16 +107,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalPhase1Priority1" title="com.flow.andriod.TC_Flowandriod_003" hash-for-method="TestValidation">TestValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalPhase1Priority1" title="com.flow.andriod.TC_Flowandriod_002" hash-for-method="TestValidation">TestValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FunctionalPhase1Priority1" title="com.flow.andriod.TC_Flowandriod_002" hash-for-method="TestValidation">TestValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -125,21 +115,22 @@
                         <a href="#" class="method navigator-link" panel-name="suite-FunctionalPhase1Priority1" title="com.flow.andriod.TC_Flowandriod_003" hash-for-method="TestValidation">TestValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-FunctionalPhase1Priority1 -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-FunctionalPhase1Priority1" class="hide-methods passed suite-FunctionalPhase1Priority1"> (hide)</a> <!-- hide-methods passed suite-FunctionalPhase1Priority1 -->
-                      <a href="#" panel-name="suite-FunctionalPhase1Priority1" class="show-methods passed suite-FunctionalPhase1Priority1"> (show)</a> <!-- show-methods passed suite-FunctionalPhase1Priority1 -->
-                    </span>
-                    <div class="method-list-content passed suite-FunctionalPhase1Priority1">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-FunctionalPhase1Priority1" title="com.flow.andriod.TC_Flowandriod_001" hash-for-method="TestValidation">TestValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-FunctionalPhase1Priority1 -->
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalPhase1Priority1" title="com.flow.andriod.TC_Flowandriod_003" hash-for-method="TestValidation">TestValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-FunctionalPhase1Priority1" title="com.flow.andriod.TC_Flowandriod_002" hash-for-method="TestValidation">TestValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-FunctionalPhase1Priority1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -162,13 +153,13 @@
                   <a name="TestValidation">
                   </a> <!-- TestValidation -->
                   <span class="method-name">TestValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: UiAUtomator shut down unexpectedly (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 515 milliseconds
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
 Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
 System info: host: &apos;DSHYD-084&apos;, ip: &apos;172.16.3.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities [{appPackage=com.getflow.tasks.next, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=C:\Users\Lavanya\Desktop\flowapp-android\src\main\resources\App_APK\base.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=C:\Users\Lavanya\Desktop\flowapp-android\src\main\resources\App_APK\base.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.getflow.tasks.next, appWaitActivity=com.getflow.tasks.ui.activities.ActFirst, databaseEnabled=false, appActivity=com.getflow.tasks.ui.activities.ActFirst, locationContextEnabled=false, deviceModel=SM-J210F}]
-Session ID: 2c806b76-898d-490e-9a0b-ce1516e43b2a
+Session ID: deb88a05-d1bd-4f31-9501-3371e680d388
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
@@ -179,6 +170,32 @@ Session ID: 2c806b76-898d-490e-9a0b-ce1516e43b2a
 	at TestNGListeners.CustomListener.afterInvocation(CustomListener.java:228)
 	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:147)
 ... Removed 50 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestValidation">
+                  </a> <!-- TestValidation -->
+                  <span class="method-name">TestValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: UiAUtomator shut down unexpectedly (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3.65 seconds
+Build info: version: &apos;3.0.0&apos;, revision: &apos;350cf60&apos;, time: &apos;2016-10-13 10:48:57 -0700&apos;
+System info: host: &apos;DSHYD-084&apos;, ip: &apos;172.16.3.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.getflow.tasks.next, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=C:\Users\Lavanya\Desktop\flowapp-android\src\main\resources\App_APK\base.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=C:\Users\Lavanya\Desktop\flowapp-android\src\main\resources\App_APK\base.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.getflow.tasks.next, appWaitActivity=com.getflow.tasks.ui.activities.ActFirst, databaseEnabled=false, appActivity=com.getflow.tasks.ui.activities.ActFirst, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: deb88a05-d1bd-4f31-9501-3371e680d388
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:340)
+	at Utilities.Utility.takeScreenshot(Utility.java:102)
+	at com.flow.andriod.TC_Flowandriod_001.TestValidation(TC_Flowandriod_001.java:103)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:147)
+... Removed 52 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -411,21 +428,6 @@ Caused by: java.net.SocketException: Connection reset
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-FunctionalPhase1Priority1-class-failed -->
-          <div class="suite-FunctionalPhase1Priority1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.flow.andriod.TC_Flowandriod_001</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestValidation">
-                  </a> <!-- TestValidation -->
-                  <span class="method-name">TestValidation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FunctionalPhase1Priority1-class-passed -->
         </div> <!-- panel FunctionalPhase1Priority1 -->
         <div panel-name="test-xml-FunctionalPhase1Priority1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -484,32 +486,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestValidation')
 data.setCell(0, 2, 'com.flow.andriod.TC_Flowandriod_001')
-data.setCell(0, 3, 233842);
+data.setCell(0, 3, 187198);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TestValidation')
 data.setCell(1, 2, 'com.flow.andriod.TC_Flowandriod_001')
-data.setCell(1, 3, 233323);
+data.setCell(1, 3, 187189);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TestValidation')
 data.setCell(2, 2, 'com.flow.andriod.TC_Flowandriod_003')
-data.setCell(2, 3, 2022);
+data.setCell(2, 3, 2035);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TestValidation')
 data.setCell(3, 2, 'com.flow.andriod.TC_Flowandriod_002')
-data.setCell(3, 3, 1704);
+data.setCell(3, 3, 1662);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TestValidation')
 data.setCell(4, 2, 'com.flow.andriod.TC_Flowandriod_003')
-data.setCell(4, 3, 1012);
+data.setCell(4, 3, 1023);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TestValidation')
 data.setCell(5, 2, 'com.flow.andriod.TC_Flowandriod_002')
-data.setCell(5, 3, 706);
+data.setCell(5, 3, 654);
 window.suiteTableData['FunctionalPhase1Priority1']= { tableData: data, tableDiv: 'times-div-FunctionalPhase1Priority1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-FunctionalPhase1Priority1">
               </div> <!-- times-div-FunctionalPhase1Priority1 -->
             </div> <!-- times-div -->
@@ -537,6 +539,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.flow.andriod.TC_Flowandriod_001</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TestValidation</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->

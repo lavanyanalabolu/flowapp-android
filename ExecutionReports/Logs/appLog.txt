@@ -35149,3 +35149,14 @@
 2017-09-26 18:49:46 INFO  - assign project toeveryone-PASS 
 2017-09-26 18:49:48 INFO  - click on create-PASS 
 2017-09-26 18:49:51 INFO  - click on private task-PASS 
+2017-09-26 18:49:55 INFO  - click ontask creator-PASS 
+2017-09-26 18:50:01 INFO  - write the task name-PASS 
+2017-09-26 18:50:08 INFO  - click on to give project name-PASS 
+2017-09-26 18:50:16 INFO  - write the project name in which you wanted to create task-PASS 
+2017-09-26 18:50:18 INFO  - click on project to be selcted-PASS 
+2017-09-26 18:50:28 INFO  - click to subscriber-PASS 
+2017-09-26 18:50:55 INFO  - null-FAIL 
+2017-09-26 18:50:59 INFO  - Total Time taken in(seconds):187
+2017-09-26 18:51:00 INFO  - Total Time taken in(seconds):1
+2017-09-26 18:51:02 INFO  - Total Time taken in(seconds):2
+2017-09-26 18:51:04 INFO  - *********************Suite Ended*********************
