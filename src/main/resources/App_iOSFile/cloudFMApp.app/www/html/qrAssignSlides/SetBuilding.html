@@ -1,0 +1,71 @@
+<div class="xpanel panel-primary" >
+	<%= headerTmp({ title: 'Assign Building' }) %>
+	<div style="" class="buildingContainer">
+
+    	<div class="newQRForm">
+    		<%
+				var dec = $(window).width()/480;
+				var wx = dec > 1? 1 : dec;
+	            var showNext = 1;
+	            var showPrevious = 0;
+	            var lastRow = startRow + pageLength;
+
+	            if(lastRow > maxRow - 1){
+	                lastRow = maxRow;
+	                showNext = 0;
+	            }
+
+	            if(startRow != 0){
+	                showPrevious = 1;
+	            }
+		    %>
+        	<div style="font-size:18px; color:#265D7C; padding:0px 5px; background-color:#F8F8F8; border-bottom:1px solid #EEE; text-align:center">
+        		<!-- <div style=" margin:0px -15px; font-size:0.8em; padding:3px 15px; text-align:center; border-top:1px solid #eee; border-bottom:1px solid #eee; ">
+        			<span class="pull-left">Choose a building for this QR Code.</span><div class="clear"></div>
+        		</div> -->
+        		<div style="margin:0px -15px; padding:3px 15px; text-align:center; border-top:1px solid #FDFDFD; font-size:0.8em">
+        			<button <% if(!showPrevious) { print('disabled="disabled"'); } %> type="button" class="btnBuildingsPrevious btn btn-primary pull-left " >
+						<span class="glyphicon glyphicon-circle-arrow-left"></span>
+					</button>
+
+					<span style="line-height:36px"><%= (startRow + 1) %> To <%= (lastRow) %> of <%= maxRow %></span>
+
+					<button <%if(!showNext) {print('disabled="disabled"');}%> type="button" class="btnBuildingsNext btn btn-primary pull-right ">
+						<span class="glyphicon glyphicon-circle-arrow-right"></span>
+					</button>
+					<div class="clear"></div>
+				</div>
+        	</div>
+
+        	<div class="building-list list-group">
+
+    			<%
+	            _.each(buildings, function(b, n){
+	            %>
+	                <div class="list-group-item" <%= (BA)? 'style="opacity:0.6"' : '' %>>
+	                	<input <%= (BA)? 'disabled' : '' %> type="radio" id="<%= b.n %>" class="fInput" name="k" value="<%= b.i %>" style="display:none;" <%= ( !!sel.length && sel[0].get('i') == b.i )? 'checked' : '' %>>
+	                	<label for="<%= b.n %>"  style="line-height:15px; font-size:<%= wx %>em" ><%= b.n %></label>
+	                </div>
+	            <%
+				});
+	            %>
+		        <div class="frmFilterQR list-group-item" style="border-bottom:0px;">
+		            <div class="form-group" style="padding:10px 15px; margin:0;">
+		                <div class="input-group">
+		                    <input type="text" class="form-control" placeholder="Filter" id="txtFilterBuilding" autocorrect="off" autocomplete="off" style="text-align:center; border:1px solid #DDD;"/>
+		                    <span class="input-group-btn" >
+		                        <button class="btn btn-primary" id="filterDont" style="" role="button" type="button" ><span class="glyphicon glyphicon-refresh"></span></button>
+		                    </span>
+		                </div>
+		            </div>
+		        </div>
+
+            	<%= (!!sel.length) ? '<p class="lead" style="padding:0 15px 10px">Current selection: ' + sel[0].get('n') + '</p>' : '' %>
+            	<%= (!!sel.length) ? '<input type="hidden" value="'+ sel[0].get('i') +'" name="k">' : '' %>
+
+
+
+        	</div>
+        </div>
+    </div>
+</div>

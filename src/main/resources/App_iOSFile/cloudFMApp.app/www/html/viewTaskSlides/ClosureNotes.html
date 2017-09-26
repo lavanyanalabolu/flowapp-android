@@ -1,0 +1,18 @@
+<div class="xpanel panel-primary">
+
+	<%= headerTmp({ title: 'Closure Notes' }) %>
+
+	<div class="sectionBody scroll list-group standardFlexColCon"  >
+			<div class="list-group-item list-group-item-default standardFlexColRow">We require a description of the work you have carried out on this task, together with details of any further works required and an explanation why.</div>
+			<div class="list-group-item standardFlexColRowGrow posRel dont-shrink" style="border-bottom-width:0px; min-height: 200px;">
+        <div class="standardFlexColRowFiller" >
+				  <textarea id="txtWorkNotes" class="form-control h100" placeholder="Type task closure notes here (minimum 30 characters)"><%try{if(currentTask.finishTask.workNotes)print(currentTask.finishTask.workNotes);} catch(e){}%></textarea>
+        </div>
+			</div>
+			<% if( ['android', 'windows'].indexOf(window.device.platform.toLowerCase()) === -1 ){ %>
+			<div class="list-group-item list-group-item-default standardFlexColRow small" style="border-bottom-width:0px">
+				By placing the cursor in the above text box, your keypad will appear.  If your keypad has a microphone symbol ( <span class="micSymbol"></span> ), by pressing this symbol, you can use your devices speech facility and then dictate your closure notes and see the text appear in the box above.
+			</div>
+			<% } %>
+	</div>
+</div>

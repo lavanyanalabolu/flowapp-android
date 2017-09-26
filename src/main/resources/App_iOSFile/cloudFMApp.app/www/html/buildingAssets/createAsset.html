@@ -1,0 +1,85 @@
+<style type="text/css">
+
+	.form-control-n:focus {
+    border-color: #66AFE9;
+    outline: 0px none;
+
+}
+.form-control-n {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+</style>
+
+<li class="list-group-item">
+	<form id="newAsset">
+	  <div class="form-group">
+	    Asset name <input type="text" class="form-control-n" name="name" >
+	  </div>
+	  <div class="form-group">
+	    Manufacturer<input type="text" class="form-control-n" name="manufacturer">
+	  </div>
+	  <div class="form-group">
+	    Model<input type="text" class="form-control-n" name="model" >
+	  </div>
+	  <div class="form-group">
+	    Serial No<input type="text" class="form-control-n" name="serial" >
+	  </div>
+	  <div class="form-group">
+	    Asset Condition<input type="text" class="form-control-n" name="condition" >
+	  </div>
+	  <div class="form-group">
+	    Year of manufacture<input type="text" class="form-control-n" name="dateofman" placeholder="eg.1990" >
+	  </div>
+	  <div class="form-group">
+	  	Location <select type="text" class="form-control" name="locationString" >
+			<option value="Loading Bay">Loading Bay</option>
+			<option value="Customer Entrance">Customer Entrance</option>
+			<option value="Window">Window</option>
+			<option value="Internal">Internal</option>
+			<option value="Fire Exit">Fire Exit</option>
+  		<option value="Front of House">Front of House</option>
+  		<option value="Kitchen">Kitchen</option>
+      <option value="1st Floor Kitchen">1st Floor Kitchen</option>
+      <option value="Bar Area">Bar Area</option>
+      <option value="1st Floor Bar Area">1st Floor Bar Area</option>
+  		<option value="Above Kitchen ceiling">Above Kitchen ceiling</option>
+  		<option value="Rear storage area">Rear storage area</option>
+  		<option value="Back Yard">Back Yard</option>
+  		<option value="On roof via internal ladder">On roof via internal ladder</option>
+  		<option value="Shopping centre roof">Shopping centre roof</option>
+  		<option value="Roof above rest.">Roof above rest.</option>
+  		<option value="On roof ">On roof</option>
+      <option value="Plant Room">Plant Room</option>
+  		<option value="1st floor plant room">1st floor plant room</option>
+  		<option value="Ground Floor">Ground Floor</option>
+  		<option value="First Floor">First Floor</option>
+  		<option value="Stairs">Stairs</option>
+	  	</select>
+	  </div>
+	  <div class="form-group">
+	  Asset ref no. <span class="small">(optional)</span><input type="text" class="form-control-n" name="assetTagNo" value="n/a">
+	  </div>
+	   <div class="form-group">
+	   <label>Category</label>
+	    <select type="text" class="form-control assetQuestions" name="assetQuestions" >
+	    <option></option>
+	    <% _.each( categories, function( c ) { %>
+	    	<option value="<%=c.assetTagCategoryGuid%>"><%=c.categoryName%></option>
+	    <% }) %>
+	    </select>
+	  </div>
+	   <div id="answers" class="form-group"></div>
+	  <button type="button" class="btn btn-success btn-block btn-lg uploadImages">Upload Images</button>
+	</form>
+</li>

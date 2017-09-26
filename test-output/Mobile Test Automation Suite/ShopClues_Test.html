@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>TestNG:  ShopClues_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ShopClues_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 02 16:24:50 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>277 seconds (277796 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestingXperts.shopclues.tests.TC_ShopClues_004.test_TC_ShopClues_004()'><b>test_TC_ShopClues_004</b><br>Test class: TestingXperts.shopclues.tests.TC_ShopClues_004</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.xpath: //android.widget.RelativeLayout[contains(@index,&apos;5&apos;)]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;CB-89&apos;, ip: &apos;192.168.6.10&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.219.101:5555, platform=LINUX, desired={app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, newCommandTimeout=300, platformVersion=5.0, automationName=APPIUM, browserName=, platformName=Android, udid=192.168.219.101:5555, deviceName=Custom Phone - 5.0.0 - API 21 - 768x1280}, newCommandTimeout=300, platformVersion=5.0, webStorageEnabled=false, locationContextEnabled=false, automationName=APPIUM, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=192.168.219.101:5555}]
+Session ID: 42027e14-bcf6-4e59-b044-cf0dd4e9b9c6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at Utilities.KeywordUtil.explicitWaitForElement(KeywordUtil.java:136)
+	at Utilities.KeywordUtil.click(KeywordUtil.java:144)
+	at TestingXperts.shopclues.tests.TC_ShopClues_004.test_TC_ShopClues_004(TC_ShopClues_004.java:74)
+	at TestingXperts.shopclues.tests.TC_ShopClues_004.test_TC_ShopClues_004(TC_ShopClues_004.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;CB-89&apos;, ip: &apos;192.168.6.10&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.219.101:5555, platform=LINUX, desired={app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, newCommandTimeout=300, platformVersion=5.0, automationName=APPIUM, browserName=, platformName=Android, udid=192.168.219.101:5555, deviceName=Custom Phone - 5.0.0 - API 21 - 768x1280}, newCommandTimeout=300, platformVersion=5.0, webStorageEnabled=false, locationContextEnabled=false, automationName=APPIUM, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=192.168.219.101:5555}]
+Session ID: 42027e14-bcf6-4e59-b044-cf0dd4e9b9c6
+*** Element info: {Using=xpath, value=//android.widget.RelativeLayout[contains(@index,&apos;5&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 28 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace334099170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace334099170'><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.xpath: //android.widget.RelativeLayout[contains(@index,&apos;5&apos;)]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;CB-89&apos;, ip: &apos;192.168.6.10&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.219.101:5555, platform=LINUX, desired={app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, newCommandTimeout=300, platformVersion=5.0, automationName=APPIUM, browserName=, platformName=Android, udid=192.168.219.101:5555, deviceName=Custom Phone - 5.0.0 - API 21 - 768x1280}, newCommandTimeout=300, platformVersion=5.0, webStorageEnabled=false, locationContextEnabled=false, automationName=APPIUM, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=192.168.219.101:5555}]
+Session ID: 42027e14-bcf6-4e59-b044-cf0dd4e9b9c6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at Utilities.KeywordUtil.explicitWaitForElement(KeywordUtil.java:136)
+	at Utilities.KeywordUtil.click(KeywordUtil.java:144)
+	at TestingXperts.shopclues.tests.TC_ShopClues_004.test_TC_ShopClues_004(TC_ShopClues_004.java:74)
+	at TestingXperts.shopclues.tests.TC_ShopClues_004.test_TC_ShopClues_004(TC_ShopClues_004.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;CB-89&apos;, ip: &apos;192.168.6.10&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=192.168.219.101:5555, platform=LINUX, desired={app=D:\framework\framework\VWO_APP\src\main\resources\App_APK\Shopclues.apk, newCommandTimeout=300, platformVersion=5.0, automationName=APPIUM, browserName=, platformName=Android, udid=192.168.219.101:5555, deviceName=Custom Phone - 5.0.0 - API 21 - 768x1280}, newCommandTimeout=300, platformVersion=5.0, webStorageEnabled=false, locationContextEnabled=false, automationName=APPIUM, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android, udid=192.168.219.101:5555}]
+Session ID: 42027e14-bcf6-4e59-b044-cf0dd4e9b9c6
+*** Element info: {Using=xpath, value=//android.widget.RelativeLayout[contains(@index,&apos;5&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:653)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:646)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 28 more
+</pre></div></td>
+<td>111</td>
+<td>TestingXperts.shopclues.tests.TC_ShopClues_004@1f36e637</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestingXperts.shopclues.tests.TC_ShopClues_001.test_TC_ShopClues_001()'><b>test_TC_ShopClues_001</b><br>Test class: TestingXperts.shopclues.tests.TC_ShopClues_001</td>
+<td></td>
+<td>35</td>
+<td>TestingXperts.shopclues.tests.TC_ShopClues_001@627551fb</td></tr>
+<tr>
+<td title='TestingXperts.shopclues.tests.TC_ShopClues_002.test_TC_ShopClues_002()'><b>test_TC_ShopClues_002</b><br>Test class: TestingXperts.shopclues.tests.TC_ShopClues_002</td>
+<td></td>
+<td>54</td>
+<td>TestingXperts.shopclues.tests.TC_ShopClues_002@2b552920</td></tr>
+<tr>
+<td title='TestingXperts.shopclues.tests.TC_ShopClues_003.test_TC_ShopClues_003()'><b>test_TC_ShopClues_003</b><br>Test class: TestingXperts.shopclues.tests.TC_ShopClues_003</td>
+<td></td>
+<td>42</td>
+<td>TestingXperts.shopclues.tests.TC_ShopClues_003@2758fe70</td></tr>
+</table><p>
+</body>
+</html>

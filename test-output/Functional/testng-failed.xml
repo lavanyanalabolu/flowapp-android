@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional]">
+  <parameter name="Platform" value="Android"/>
+  <test name="Functional-Tests">
+    <classes>
+      <class name="com.cloudfm.andriod.Tc_andriod_002"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_003"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_005"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_006"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_010"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_012"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_016"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_023"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_028"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_029"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_035"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_041"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_043"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_044"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_045"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_046"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_047"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_049"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_050"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_052"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_053"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_054"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_055"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_056"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_057"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_058"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_059"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_060"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_062"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_067"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_068"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_069"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_070"/>
+      <class name="com.cloudfm.andriod.Tc_andriod_071"/>
+    </classes>
+  </test> <!-- Functional-Tests -->
+  <test name="Functional-Tests(failed)">
+    <classes>
+      <class name="com.cloudfm.andriod.Tc_andriod_003">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_003 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_002">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_002 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_069">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_069 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_047">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_047 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_062">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_062 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_049">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_049 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_071">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_071 -->
+      <class name="com.cloudfm.andriod.Tc_andriod_067">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.cloudfm.andriod.Tc_andriod_067 -->
+    </classes>
+  </test> <!-- Functional-Tests(failed) -->
+</suite> <!-- Failed suite [Functional] -->

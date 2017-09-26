@@ -1,0 +1,24 @@
+<div class="overlay" style="display:none;">
+    <div class="divAvatarPrompt prompt" >
+        <div class="alert alert-default" role="alert">
+
+            <div class="imgBox" style="height:<%=parseInt(windowHeight)-300%>px; width:100%; border:1px solid #fff; position:relative; overflow:hidden; background-color:#fff; padding:0px">
+                <div id="avatarUploadProgress" class="progress" style="display:none">
+                        <div id="avUploadProgress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" ></div>
+                </div>
+              <!--   <img id="avatarPreview" width="200px" heigth="200px">ava pr -->
+                <img id="avatarPreviewCr" width="100%" heigth="100%" >
+                <div class="theImg" style="display:none; width:100%; height:100%; position:absolute; top:0px; left:0px;" ></div>
+            </div>
+            <div id="button-bar" style="position: absolute; width:100%; text-align:center; top:<%=(parseInt(windowHeight)-300)/2-40%>px; overflow:hidden; left:0px; z-index:99999;">
+                <button style="margin:0 auto; border:1px solid #fff;" data-userGuid="" data-mode="camera" class="btn btn-xl btn-circle btn-primary btnAvatarGet" type="button">
+                    <span class="glyphicon glyphicon-camera"></span>
+                </button>
+            </div>
+            <input id='avatarUpload' name='filUpload' type="file" style="display: none;">
+            <br/>
+            <br/>
+            Cloudfm require you to add a photograph of yourself for security purposes.  Please ensure you take a good quality photo showing the whole of your face. This photo will need to be manually approved before it will be displayed on this App.
+        </div>
+	</div>
+</div>

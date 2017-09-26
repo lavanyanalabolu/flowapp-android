@@ -1,0 +1,16 @@
+
+<% _.each( qna.questions, function( q ) {  %>
+<li class="list-group-item">
+	<label><%=q.questionText%></label>
+	<% if ( q.questionType =="select" ) { %>
+		<select class="form-control" name="<%=q.assetTableFieldName%>">
+		<option></option>
+		<% _.each( q.responses, function( r ) { %>
+			<option value="<%=r%>"><%=r%></option>
+		<% }) %>
+		</select>
+	<% }  else { %>
+	<input class="form-control" name="<%=q.assetTableFieldName%>">
+	<% } %>
+</li>
+<% }) %>

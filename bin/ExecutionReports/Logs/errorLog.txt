@@ -1,0 +1,230 @@
+2016-05-16 12:39:24 ERROR - Test step has failed...
+2016-05-16 12:39:24 ERROR - -----------------------------------------------------------------------
+2016-05-16 14:46:28 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.42 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.view.View[contains(@index,'9')]}
+Session ID: dae4c006-37f0-4fef-9c00-60aeec2019b8
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.102:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=4.3, databaseEnabled=false, fullReset=true, deviceName=192.168.171.102:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 14:46:28 ERROR - -----------------------------------------------------------------------
+2016-05-16 14:47:44 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16.84 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,'Search by ID')]}
+Session ID: dae4c006-37f0-4fef-9c00-60aeec2019b8
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.102:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=4.3, databaseEnabled=false, fullReset=true, deviceName=192.168.171.102:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 14:47:44 ERROR - -----------------------------------------------------------------------
+2016-05-16 14:48:06 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Register Free')]}
+Session ID: dae4c006-37f0-4fef-9c00-60aeec2019b8
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.102:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=4.3, databaseEnabled=false, fullReset=true, deviceName=192.168.171.102:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 14:48:06 ERROR - -----------------------------------------------------------------------
+2016-05-16 14:59:20 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.61 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,'Search by ID')]}
+Session ID: 6262fb03-930c-426f-904a-26b4298e9dc7
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 14:59:20 ERROR - -----------------------------------------------------------------------
+2016-05-16 14:59:43 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Register Free')]}
+Session ID: 6262fb03-930c-426f-904a-26b4298e9dc7
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 14:59:43 ERROR - -----------------------------------------------------------------------
+2016-05-16 15:00:06 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.52 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Login')]}
+Session ID: 6262fb03-930c-426f-904a-26b4298e9dc7
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 15:00:06 ERROR - -----------------------------------------------------------------------
+2016-05-16 15:07:03 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.35 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,'Search by ID')]}
+Session ID: 5092384b-303d-4489-a6b1-dd26f594775e
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 15:07:03 ERROR - -----------------------------------------------------------------------
+2016-05-16 15:07:26 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Register Free')]}
+Session ID: 5092384b-303d-4489-a6b1-dd26f594775e
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 15:07:26 ERROR - -----------------------------------------------------------------------
+2016-05-16 15:07:48 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Login')]}
+Session ID: 5092384b-303d-4489-a6b1-dd26f594775e
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 15:07:48 ERROR - -----------------------------------------------------------------------
+2016-05-16 15:15:59 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,'Search by ID')]}
+Session ID: 459893bc-8acb-4f75-a645-500d0d301bda
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 15:15:59 ERROR - -----------------------------------------------------------------------
+2016-05-16 15:20:23 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 80.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,'Search by ID')]}
+Session ID: 442321e4-be47-4dce-ace7-a862bdd667c1
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 15:20:23 ERROR - -----------------------------------------------------------------------
+2016-05-16 19:02:42 ERROR - The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: 093298b3-9ccd-4473-850b-5cba39884da3
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=5.1, databaseEnabled=false, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 19:02:42 ERROR - -----------------------------------------------------------------------
+2016-05-16 19:32:47 ERROR - The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: bb87a36a-a7d5-4def-877f-b7ef7e9f76e5
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=5.1, databaseEnabled=false, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 19:32:47 ERROR - -----------------------------------------------------------------------
+2016-05-16 19:34:18 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 80.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Register Free')]}
+Session ID: bb87a36a-a7d5-4def-877f-b7ef7e9f76e5
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=5.1, databaseEnabled=false, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 19:34:18 ERROR - -----------------------------------------------------------------------
+2016-05-16 19:35:45 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 80.27 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Login')]}
+Session ID: bb87a36a-a7d5-4def-877f-b7ef7e9f76e5
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=4.3}, locationContextEnabled=false, appPackage=com.community.matrimony, version=4.3, platformVersion=5.1, databaseEnabled=false, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 19:35:45 ERROR - -----------------------------------------------------------------------
+2016-05-16 19:51:32 ERROR - The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: 107e64f0-535b-4d71-8803-3978a6bddf18
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=6.0.0}, locationContextEnabled=false, appPackage=com.community.matrimony, version=6.0.0, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 19:51:32 ERROR - -----------------------------------------------------------------------
+2016-05-16 20:00:03 ERROR - The coordinates provided to an interactions operation are invalid. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: 30031a96-1730-4269-9a89-705fad0743cb
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, orientation=LANDSCAPE, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=60, automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, orientation=LANDSCAPE, platform=ANDROID, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=6.0.0}, locationContextEnabled=false, appPackage=com.community.matrimony, version=6.0.0, newCommandTimeout=60, platformVersion=6.0, databaseEnabled=false, fullReset=true, deviceName=192.168.171.103:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-16 20:00:03 ERROR - -----------------------------------------------------------------------
+2016-05-17 12:13:29 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 80.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@text,'Register Free1')]}
+Session ID: ee8a4482-aea5-4320-8534-15b66bd9cc8a
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, orientation=LANDSCAPE, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=60, automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, orientation=LANDSCAPE, platform=ANDROID, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=5.1.0}, locationContextEnabled=false, appPackage=com.community.matrimony, version=5.1.0, newCommandTimeout=60, platformVersion=5.1, databaseEnabled=false, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-17 12:13:29 ERROR - -----------------------------------------------------------------------
+2016-05-17 12:19:09 ERROR - An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.38 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: d50c90e7-1b0e-45db-af42-90ad03ad3964
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{automationName=APPIUM, platform=ANDROID, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, orientation=LANDSCAPE, javascriptEnabled=true, appActivity=com.community.matrimony.Splash, browserName=Android, networkConnectionEnabled=true, desired={newCommandTimeout=60, automationName=APPIUM, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\CommunityMatrimony_v2.10.2_apkpure.com.apk, orientation=LANDSCAPE, platform=ANDROID, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, appActivity=com.community.matrimony.Splash, appPackage=com.community.matrimony, version=5.1.0}, locationContextEnabled=false, appPackage=com.community.matrimony, version=5.1.0, newCommandTimeout=60, platformVersion=5.1, databaseEnabled=false, fullReset=true, deviceName=192.168.171.101:5555, platformName=Android, webStorageEnabled=false, warnings={}, takesScreenshot=true}]
+2016-05-17 12:19:09 ERROR - -----------------------------------------------------------------------
+2016-05-23 16:22:57 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.flipkart.android, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\com.flipkart.android-4.4.2-APK4Fun.com.apk, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, version=6.0.0, deviceName=192.168.171.102:5555, fullReset=true, platform=ANDROID, appActivity=com.flipkart.android.SplashActivity, desired={appPackage=com.flipkart.android, appActivity=com.flipkart.android.SplashActivity, app=D:\Nitin\mobile_automation\Workspace\VWO_APP\.\src\main\resources\App_APK\com.flipkart.android-4.4.2-APK4Fun.com.apk, newCommandTimeout=60, automationName=APPIUM, platformName=Android, version=6.0.0, deviceName=192.168.171.102:5555, fullReset=true, platform=ANDROID}, newCommandTimeout=60, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, automationName=APPIUM, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 98490684-3406-48ab-b0bc-81be96ffab0b
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@resource-id,'com.flipkart.android:id/search_widget_textbox')]}
+2016-05-23 16:22:57 ERROR - -----------------------------------------------------------------------
+2016-05-23 16:23:42 ERROR - A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 267 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+2016-05-23 16:23:42 ERROR - -----------------------------------------------------------------------
+2016-05-23 16:24:04 ERROR - A new session could not be created. (Original error: No app set; either start appium with --app or pass in an 'app' value in desired capabilities, or set androidPackage to launch pre-existing app on device) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 164 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+2016-05-23 16:24:04 ERROR - -----------------------------------------------------------------------
+2016-05-23 16:24:51 ERROR - A new session could not be created. (Original error: Activity used to start app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.26 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+2016-05-23 16:24:51 ERROR - -----------------------------------------------------------------------
+2016-05-23 16:26:36 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.flipkart.android, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, version=6.0.0, deviceName=192.168.171.102:5555, platform=ANDROID, appActivity=com.flipkart.android.SplashActivity, desired={appPackage=com.flipkart.android, appActivity=com.flipkart.android.SplashActivity, newCommandTimeout=60, automationName=APPIUM, platformName=Android, version=6.0.0, deviceName=192.168.171.102:5555, platform=ANDROID}, newCommandTimeout=60, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, automationName=APPIUM, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 4dfbcfe1-5aad-46c4-bb35-689add44870d
+*** Element info: {Using=xpath, value=//android.widget.Button[contains(@resource-id,'com.flipkart.android:id/search_widget_textbox')]}
+2016-05-23 16:26:36 ERROR - -----------------------------------------------------------------------
+2016-05-23 16:32:16 ERROR - An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.57 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DAMCO-PC', ip: '192.168.6.78', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.flipkart.android, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, version=6.0.0, deviceName=192.168.171.102:5555, platform=ANDROID, appActivity=com.flipkart.android.SplashActivity, desired={appPackage=com.flipkart.android, appActivity=com.flipkart.android.SplashActivity, automationName=APPIUM, platformName=Android, version=6.0.0, deviceName=192.168.171.102:5555, platform=ANDROID}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, automationName=APPIUM, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: 1da7a601-d1b6-4f83-97ac-07af916f44d9
+*** Element info: {Using=xpath, value=//android.widget.EditText[contains(@resource-id,'com.flipkart.android:id/search_autoCompleteTextView')]}
+2016-05-23 16:32:16 ERROR - -----------------------------------------------------------------------

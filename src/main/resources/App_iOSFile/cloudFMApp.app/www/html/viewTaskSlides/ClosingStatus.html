@@ -1,0 +1,60 @@
+<div class="xpanel panel-primary">
+	<%= headerTmp({ title: 'Closing Status' }) %>
+	<div class="sectionBody scroll list-group" >
+
+		<div data-status="Complete" class="<%= QuoteReqLock ? 'disabled ' : ''%> btnChooseStatus list-group-item  btnTaskStatusComplete <%if(currentTask.finishTask.taskStatus!='Complete') {print('list-group-item-default');}else{print('list-group-item-primary');}%>" >Complete</div>
+		<div data-status="QuoteRequired" class="btnChooseStatus list-group-item btnTaskStatusQuoteRequired <%if(currentTask.finishTask.taskStatus!='QuoteRequired') {print('list-group-item-default');}else{print('list-group-item-primary');}%>" >Quote Required</div>
+		<div data-status="AnotherVisit" class="<%= QuoteReqLock ? 'disabled ' : ''%> btnChooseStatus list-group-item btnTaskStatusAnotherVisit <%if(currentTask.finishTask.taskStatus!='AnotherVisit') {print('list-group-item-default');}else{print('list-group-item-primary');}%>" >Another Visit</div>
+		<div data-status="TemporaryFix" class="<%= QuoteReqLock ? 'disabled ' : ''%> btnChooseStatus list-group-item btnTaskStatusTemporaryFix <%if(currentTask.finishTask.taskStatus!='TemporaryFix') {print('list-group-item-default');}else{print('list-group-item-primary');}%>" >Temporary Fix</div>
+		<div data-status="PartsRequired" class="<%= QuoteReqLock ? 'disabled ' : ''%> btnChooseStatus list-group-item btnTaskStatusPartsRequired <%if(currentTask.finishTask.taskStatus!='PartsRequired') {print('list-group-item-default');}else{print('list-group-item-primary');}%>" >Parts Required</div>
+		<div data-status="NoAccess" class="<%= QuoteReqLock ? 'disabled ' : ''%> btnChooseStatus list-group-item btnTaskStatusNoAccess <%if(currentTask.finishTask.taskStatus!='NoAccess') {print('list-group-item-default');}else{print('list-group-item-primary');}%>" >No Access</div>
+
+		<div class="list-group-item" style="font-size: 13px;" >
+				<% if(!client.currentTask.finishTask.taskStatus){ %>
+					<div id="divStatusTextNotset">
+						Please select the closing status for the task.
+					</div>
+				<% } %>
+				<div id="divStatusTextComplete" class="divStatusText" style="display:<%if(currentTask.finishTask.taskStatus!=='Complete') print('none');%>">
+					The task is completed and we do not expect to have to return.<br><b>No further visits will be available for this task, and it will be available for invoicing immediately.</b>
+				</div>
+				<div id="divStatusTextQuoteRequired" class="divStatusText" style="display:<%if(currentTask.finishTask.taskStatus!=='QuoteRequired') print('none');%>">
+					Work carried out, but this task will require a follow up quote.<br><b>No further visits will be available for this task, and it will be available for invoicing immediately.</b>
+				</div>
+				<div id="divStatusTextAnotherVisit" class="divStatusText" style="display:<%if(currentTask.finishTask.taskStatus!=='AnotherVisit') print('none');%>">
+					Further visits are required before this task can be completed.<br><b>This task will not be available for invoicing until it is closed as Complete or Quote Required.</b>
+				</div>
+				<div id="divStatusTextTemporaryFix" class="divStatusText" style="display:<%if(currentTask.finishTask.taskStatus!=='TemporaryFix') print('none');%>">
+					A temporary fix has been made, but further visits are required before this task can be completed.<br><b>The task will not be available for invoicing until the task is closed with either Complete or Quote Required.</b>
+				</div>
+				<div id="divStatusTextPartsRequired" class="divStatusText" style="display:<%if(currentTask.finishTask.taskStatus!=='PartsRequired') print('none');%>">
+					Parts are required before this task can be completed.<br><b>Further visits will be required before this task can be completed.  The task will not be available for invoicing until the task is closed with either Complete or Quote Required.</b>
+				</div>
+				<div id="divStatusTextNoAccess" class="divStatusText" style="display:<%if(currentTask.finishTask.taskStatus!=='NoAccess') print('none');%>">
+					Engineer was unable to access the issue.  Further visits are required before this task can be completed.<br><b>The task will not be available for invoicing until the task is closed with either Complete or Quote Required.</b>
+				</div>
+		</div>
+		<% if(QuoteReqLock){ %>
+			<div class="list-group-item text-danger" style="font-size: 13px ;" >
+				As you have noted that an asset on this task requires a quote, the only closing status available is 'Quote Required'.
+			</div>
+		<% } %>
+		<% if($.getAppPermission('reasonForFailure') && ['PPM', 'AutoPPM', 'QuotedWorks'].indexOf(currentTask.task[0].taskType) === -1){ %>
+			<div class="list-group-item" style="font-size: 13px ;" >
+				<p class=""><b>Reason for asset failure</b></p>
+				<select class="form-control causeSel" id="causeSel">
+					<option value="">please select</option>
+				</select>
+			</div>
+            <div class="list-group-item text-center yesNoRadio yesNoRadioPrimary">
+                <p class="" style="font-size: 13px ; text-align: left; width:100%">
+                    <b>Have you left the asset operational?</b>
+                </p>
+                <input value="1" name="equipStatus" id="equipStatusY" type="radio" <%= equipStatus === 1? 'checked' : '' %>>
+                <div style="width:40%" class="input-label btn btn-default" style="">Yes</div>
+                <input value="0" name="equipStatus" id="equipStatusN" type="radio" <%= equipStatus === 0? 'checked' : '' %> >
+                <div style="width:40%" class="input-label btn btn-default" style="">No</div>
+            </div>
+		<% } %>
+	</div>
+</div>

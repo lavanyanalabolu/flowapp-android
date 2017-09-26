@@ -1,0 +1,94 @@
+<%
+	var currentTask = $.parseClient().currentTask;
+	var oddJobs = currentTask.oddJobs;
+%>
+
+	<%
+		var oddJobPos = 0;
+		var oddJobCount = oddJobs.length;
+		var open = _.filter(oddJobs, function(v,k){
+			return v.status.toLowerCase() == 'open';
+		});
+		var completed = _.filter(oddJobs, function(v,k){
+			return v.status.toLowerCase() == 'complete';
+		});
+
+		var inProgress = _.filter(oddJobs, function(v,k){
+			return v.status  == 'inProgress';
+		});
+	%>
+
+	<li class="list-group-item">
+		<div class="btn-group btn-group-justified">
+			<a class="btn btn-primary btn-oddJobList" data-oddJobStatus="open">
+				<span class="badge"><%=open.length%></span> Open
+			</a>
+			<a class="btn btn-default btn-oddJobList" data-oddJobStatus="inProgress">
+				<span class="badge" ><%=inProgress.length%></span>
+				In Progress
+			</a>
+			<a class="btn btn-default btn-oddJobList" data-oddJobStatus="completed">
+				<span class="badge"><%=completed.length%></span> Completed
+			</a>
+		</div>
+		<!-- <div class="btn-group-justified">
+			<div class="btn-group" role="group">
+			  	<button type="button" class="btn btn-sm btn-primary btn-oddJobList" data-oddJobStatus="pending">
+			  		<span class="badge" ><%=open.length%></span>
+			  		Open
+			  	</button>
+			</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-sm btn-default btn-oddJobList" data-oddJobStatus="inProgress">
+					<span class="badge" ><%=inProgress.length%></span>
+					inProgress
+				</button>
+			</div>
+		</div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-sm btn-default btn-oddJobList" data-oddJobStatus="completed">
+					<span class="badge" ><%=completed.length%></span>
+					Completed
+				</button>
+			</div>
+		</div> -->
+	</li>
+	<div style="border-top:1px solid #ddd" class="list-group" id="openOddJobs">
+		<% _.each(open, function(oj) { %>
+			<li class="list-group-item list-group-item-default btnEditOddJob" data-odjobId="<%=oj.PK_Clip_Key%>">
+				<div class="row wrapper " >
+					<div class="col-xs-10 column"><%=oj.Clip_Description%></div>
+					<div class="col-xs-2 column child" >
+						<span class="glyphicon glyphicon-chevron-right" style="font-size:18px;"></span>
+					</div>
+				</div>
+
+			</li>
+		<% }); %>
+	</div>
+	<div class="list-group" id="completedOddJobs" style="display:none; border-top:1px solid #ddd">
+		<% _.each(completed, function(oj) { %>
+			<li class="list-group-item list-group-item-default btnEditOddJob" data-odjobId="<%=oj.PK_Clip_Key%>">
+				<div class="row wrapper " >
+					<div class="col-xs-10 column"><%=oj.Clip_Description%></div>
+					<div class="col-xs-2 column child" >
+						<span class="glyphicon glyphicon-chevron-right" style="font-size:18px;"></span>
+					</div>
+				</div>
+
+			</li>
+		<% }); %>
+	</div>
+	<div class="list-group" id="inProgress" style="display:none; border-top:1px solid #ddd">
+		<% _.each(inProgress, function(oj) { %>
+			<li class="list-group-item list-group-item-default btnEditOddJob" data-odjobId="<%=oj.PK_Clip_Key%>">
+				<div class="row wrapper " >
+					<div class="col-xs-10 column"><%=oj.Clip_Description%></div>
+					<div class="col-xs-2 column child" >
+						<span class="glyphicon glyphicon-chevron-right" style="font-size:18px;"></span>
+					</div>
+				</div>
+
+			</li>
+		<% }); %>
+	</div>

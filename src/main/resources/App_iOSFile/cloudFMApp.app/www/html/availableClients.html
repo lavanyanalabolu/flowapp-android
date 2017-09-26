@@ -1,0 +1,23 @@
+<div class="xpanel" style="padding:0px 1% 0;">
+	<div class="sectionBody scroll list-group" style="" android:fastScrollEnabled="true">
+		<div id="btnUpdateClients" class="list-group-item">
+		    Refresh Client List <span class="glyphicon glyphicon-refresh pull-right"></span>
+		</div>
+		<%
+			try {
+				var clients = localStorage_a.getItem('clients');
+
+			} catch(e) {
+				var clients = [];
+			}
+		%>
+		<% _.each(clients, function(c) { %>
+			<div class="btnSelectClient list-group-item" style="text-align:center" data-clientID="<%=c.clientID%>">
+			    <!--<div style="display:block;height:30px;width:100%;background-color:#FFF;background-image:url(https://az765310.vo.msecnd.net/images/logos/clientLogo_<%=c.qrCloudKey%>.jpg);background-size:auto 30px;background-repeat:no-repeat;background-position:center;"></div>-->
+				<img style="height:30px;margin:0 auto;" onerror="<%= $.remoteImgFallback('https://az765310.vo.msecnd.net/images/logos/clientLogo_' + c.qrCloudKey + '.jpg') %>" id="<%=c.qrCloudKey%>" class="clientLogoImg" src="images/engineerApp/JPG/clientLogo_<%=c.qrCloudKey%>.jpg" />
+				<div style="margin-top:5px;text-align:center;"><%=c.clientName%></div>
+			</div>
+		<%});%>
+		<div class="clear"></div>
+	</div>
+</div>

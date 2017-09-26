@@ -1,0 +1,144 @@
+<script type="text/template" id="TaskInformationSlide">
+    <div id="taskDetails" class="xpanel panel-primary" >
+
+    	<%= headerTmp({
+    		title: "Task Information" + ( (mode.mode==='allocation')? ' (Allocation mode)' : ''),
+    		noLeft: true
+    		}) %>
+
+    	<div class="sectionBody scroll list-group" style="" >
+    			<div class="list-group-item">
+    				<span class="pull-right"><%=t.taskType%> / <%=t.disc%> </span> <%=t.taskNum%>
+    			</div>
+    			<div class="list-group-item">
+    				<span class="pull-right"><%=client.clientName%></span> Client:
+    			</div>
+    			<li class="inline-list-group list-group-item list-group-item-default building no-pad">
+            <div class="list-group-item inline-list-group-item valignFlexColCon grow" style="padding-right: 5px">
+      				<div style="width:100%;">
+                <span class="pull-right">
+        					<%=t.buildingName%>
+        				</span>
+                Building:
+               </div>
+             </div>
+             <div class="list-group-item inline-list-group-item valignFlexColCon" style="padding-left:0">
+               <span class="glyphicon glyphicon-chevron-right" style="margin-top:-2px" ></span>
+             </div>
+    			</li>
+    			<div class="list-group-item">
+    				<span class="pull-right"> <%=t.taskStatus%></span> Status:
+    			</div>
+    			<div class="list-group-item">
+    				<span class="pull-right"> <%=t.taskDate%></span> Task<%= t.taskType.substr(-3) !== 'PPM'? ' Logged ' : ' ' %>Date:
+    			</div>
+
+    			<% if( t.taskType==='AutoPPM' ) { %>
+    				<div class="list-group-item list-group-item-default showPPMlIst">
+    					<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+    					See task for asset details
+    				</div>
+    			<% } else { %>
+    				<div class="list-group-item"><%=t.taskDesc%></div>
+            <li class="inline-list-group list-group-item list-group-item-default liLinkToTab no-pad" data-buttonSet="BuildingAssets">
+              <div class="list-group-item inline-list-group-item valignFlexColCon" style="width:4.2em; text-align:center; padding:10px 8px">
+                <span style="font-size:2em" class="glyphicon glyphicon-qrcode"></span>
+              </div>
+              <div class="list-group-item inline-list-group-item valignFlexColCon grow" style="padding-left: 5px; padding-right: 5px">
+                <div style="width:100%;">
+                  <span class="pull-right"> <% !!t.assetLocation ? print(t.assetLocation) : print('N/A') %> </span>
+        				  Asset Location:
+                </div>
+              </div>
+              <div class="list-group-item inline-list-group-item valignFlexColCon" style="padding-left:0">
+                <span class="glyphicon glyphicon-chevron-right" style="margin-top:-2px" ></span>
+              </div>
+            </li>
+    			<% } %>
+
+    			<% if( parseInt(t.priorityHrs) !== 0 ){ %>
+    				<div class="list-group-item <%= new Date(new Date(t.tLoggedDate).getTime() + parseInt(t.priorityHrs)*1000*60*60) > Date.now() ? '' : 'list-group-item-danger' %>">
+    					<span class="pull-right" style=""> <%= moment(new Date(new Date(t.tLoggedDate).getTime() + parseInt(t.priorityHrs)*1000*60*60) ).utc().format('LLL') %></span> Arrival Expected:
+    				</div>
+    				<div class="list-group-item <%= new Date(new Date(t.tLoggedDate).getTime() + parseInt(t.priorityHrs)*1000*60*60) > Date.now() ? '' : 'list-group-item-danger' %>">
+    					<span class="pull-right" style=""> <%= moment(new Date(new Date(t.tLoggedDate).getTime() + parseInt(t.priorityCompHrs)*1000*60*60) ).utc().format('LLL') %></span> Completion Expected:
+    				</div>
+    			<% }else{ %>
+    				<div class="list-group-item <%= new Date(new Date(t.tTaskDated).getTime() + (23*1000*60*60 ) + (59*1000*60) ) > Date.now() ? '' : 'list-group-item-danger' %>">
+    					<span class="pull-right" style=""> <%= moment(new Date(new Date(t.tTaskDated).getTime() + (23*1000*60*60 ) + (59*1000*60) ) ).utc().format('LLL') %></span> Task Due:
+    				</div>
+    				<% if(t.taskType=='AutoPPM' && !!t.tETA){ %>
+    					<div class="list-group-item <%= new Date(t.tETA) > Date.now() ? '' : 'list-group-item-danger' %>">
+    						<span class="pull-right" style=""> <%= moment( new Date(t.tETA ) ).utc().format('LLL') %></span> Committed ETA:
+    					</div>
+    				<% } %>
+    			<% } %>
+
+    	</div>
+    </div>
+
+    <div class="xpanel panel-danger" style="display:none; z-index:12003;" id="abandoner">
+    	<!-- <div class="overlayFloater">
+    		<div class="xpanel panel-primary"> -->
+    			<div class="panel-heading">
+    				<div class="row clearfix">
+    					<div class="col-xs-12  text-center">
+    						<h3 class="panel-title">Abandon Task</h3>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="sectionBody scroll" >
+    				<div style="text-align: center; white-space: normal; padding: 10px 20px;">
+    					<strong>If you have accidentally begun this task and wish to exit press Yes below.</strong><br /><br />
+    					The abandoned task will appear on the Task List ready for someone else to complete, and no details of your activity on it will be recorded.<br /><br />
+    					Are you sure you wish to abandon this task?
+    					<br />
+    					<br />
+    					<br />
+    					<button type="button" class="btn btn-lg btn-danger btnAbandonTaskYes">Yes</button>
+    					<button type="button" class="btn btn-lg btn-success btnAbandonTaskNo">No</button>
+    				</div>
+    			</div>
+    		<!-- </div>
+    	</div> -->
+    </div>
+    <!-- </div> -->
+</script>
+<script type="text/template/section" id="buildingDetails">
+  <%= headerTmp({
+    title: 'Building Details',
+    noRight: true,
+    customLeft: 'backToTaskDetails'
+  }) %>
+
+  <div class=" sectionBody scroll list-group"  >
+    <div class="list-group-item">
+      <span class="pull-right"><%=t.buildingName%></span>
+      Name:
+    </div>
+    <div class="list-group-item">
+      <span class="pull-right"><%=t.a1%></span>
+      Address 1:
+    </div>
+    <div class="list-group-item">
+      <span class="pull-right"><%=t.a2%></span>
+      Address 2:
+    </div>
+    <div class="list-group-item">
+      <span class="pull-right"><%=t.town%></span>
+      Town:
+    </div>
+    <div class="list-group-item">
+      <span class="pull-right"><%=t.county%></span>
+      County:
+    </div>
+    <div class="list-group-item">
+      <span class="pull-right"><%=t.pc%></span>
+      Postcode:
+    </div>
+    <div class="list-group-item">
+      <span class="pull-right"><a href="tel:<%=t.tel%>"><%=t.tel%></a></span>
+      Telephone:
+    </div>
+  </div>
+</script>

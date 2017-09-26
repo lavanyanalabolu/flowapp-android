@@ -1,0 +1,83 @@
+<style>
+.p-panel {
+    border-color: #D2D2D2;
+    box-shadow: 0px 1px 0px #CFCFCF;
+    border-radius: 0px;
+}
+</style>
+
+<div class="xpanel panel-primary" style="height:100%">
+		<div class="panel-heading">
+			<div class="row clearfix">
+		  		<div class="col-xs-3"> <span class="pull-left glyphicon glyphicon-chevron-left back" style="font-size: 1.4em;"></div>
+		  		<div class="col-xs-6 text-center"><%=title%></div>
+		  		<div class="col-xs-3">
+		  			
+		  		</div>
+		  	</div>
+		</div>
+		<ul class="sectionBody scroll" style="" android:fastScrollEnabled="true">
+		<% _.each( stats, function( v, k ) { %>
+			<div class="p-panel">
+	   			<div class="panel-body">
+	   				<li class="list-group-item" style="border-top:none">
+						<h4>
+							<strong><%=moment(v.etaDate).format('llll')%></strong>
+							<span class="pull-right">						
+								<span class="glyphicon glyphicon-chevron-down tgl" data-guid="<%=k%>" data-type="desc" style="font-size: 1.4em; top:0px"></span>
+							</span>
+						</h4>
+					</li>
+					<div class="main-<%=k%>">
+						<% if ( v.notes.length > 0 ) { %>
+							<li class="list-group-item" style="border-bottom:none">
+								Previous visit notes:
+								<span class="badge badge-danger pull-right"><%=v.notes.length %> </span>
+							</li>
+						<% } %>
+		              	<li class="list-group-item">
+							Task: <span class="pull-right"><%=v.taskNum%></span>
+						</li> 
+						<li class="list-group-item">
+							Discipline: <span class="pull-right"><%=v.discipline%></span>
+						</li>
+						<li class="list-group-item">
+							Client: <span class="pull-right"><%=v.clientName%></span>
+						</li>
+						<li class="list-group-item" style="border-bottom:none">
+							Building: <span class="pull-right"><%=v.buildingName%></span>
+						</li>
+					</div>
+					<div class="desc-<%=k%>" style="display:none;">
+					<% if ( v.notes.length > 0 ) { %>
+						<li class="list-group-item">
+							<h4><strong>Previous task notes</strong></h4>
+						</li>
+						<% _.each( v.notes , function( n ) { %>
+							<li class="list-group-item">
+								<p> <%=n.note%> </p>
+								<p class="clearfix">
+									<small class="pull-right">
+										By <%=n.username%> on <%=moment(n.creationDate).format('lll') %>
+									</small>
+								</p>
+								<p> 
+									<button class="btn btn-block btn-lg btn-success acknowledgeNote" data-guid="<%=n.notesForNextVisitGuid%>">Acknowledge</button>
+								</p>
+							</li>
+						<% }) %>
+					<% } %>
+						<li class="list-group-item">
+							<h4> <strong>Task Description</strong></h4>
+						</li>
+						<li class="list-group-item" style="border-bottom:none;">
+							<p> <%=v.TSK_DESCRIPTION%></p>
+						</li>
+					</div>
+	            </div>
+         	</div>
+         	<br>
+		<% }) %>
+		</ul>
+	</div>
+	</div>

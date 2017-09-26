@@ -1,0 +1,45 @@
+<%
+	var client = $.parseClient();
+	var currentTask = client.currentTask;
+	var photos = currentTask.photos;
+	//$.serverLog(client.clientGuid);
+
+%>
+
+<div class="divAddPhoto" style="display:none;position:fixed;top:40px;height:<%=mainSectionHeight-50%>px;width:100%;background-color:#fff;">
+	<form id="frmUploadPhoto"  enctype="multipart/form-data" method="post" autocomplete="off">
+		<div class="group-list">
+			<div class="list-group-item list-group-item-default text-center">
+				Photo Description
+			</div>
+			<div class="list-group-item">
+				<input type="text" id="photoDOC_Desc" name="DOC_Desc" class="form-control" placeholder="">
+			</div>
+			<div id="previewContainer" class="list-group-item"  >
+	      		<img class="img-responsive" id="imageUploadPreview" style="width:100%;margin-bottom:7px;height:70%" >
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="divPhotoList" style="">
+	<ul class="list-group">
+		<% _.each( photos, function(photo) {  %>
+			<li class="list-group-item viewPhotoLi" >
+				<div class="viewPhotoInfo">
+					<p ><b>Uploaded By:</b></p>
+					<p><%=photo.crBy%></p>
+					<p><%=photo.crDt%></p>
+					<p><%=photo.docDesc%></p>
+				</div>
+				<div class="viewPhotoContainer text-center">
+				<a class="viewPhoto"  data-photo="<%=serverPath%>/image2/<%= client.clientGuid%>/<%= photo.docGuid %>/<%= photo.docExt %>" >
+					<img data-original="<%=serverPath%>/image2/<%= client.clientGuid%>/<%= photo.docGuid %>/<%= photo.docExt %>/150"  />
+				</a>
+				</div>
+				<div class="clear"></div>
+			</li>
+		<% }); %>
+		<%= (!photos.length)? '<h1 class="text-center">No photos</h1>' : '' %>
+	</ul>
+</div>

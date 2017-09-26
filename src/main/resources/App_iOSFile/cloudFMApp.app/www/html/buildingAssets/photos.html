@@ -1,0 +1,8 @@
+
+<div class="row">
+<% 
+var pLength = photos.length;
+_.each( photos , function( p ) { %>
+    <div class="col-md-4 col-sm-4 col-xs-4"><img class="img-thumbnail" style="width: 100%" src ="<%=p.imageURI%>" ></div>
+<% }) %>
+</div>

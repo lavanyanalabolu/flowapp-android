@@ -1,0 +1,13 @@
+
+<div class="panel-heading">
+    <h3 class="panel-title text-center">Building Check in</h3>
+</div>
+<ul class="sectionBody scroll list-group" style="" android:fastScrollEnabled="true">
+    <li class="list-group-item text-center">
+		<img style="width:130px;"  onerror="<%= $.remoteImgFallback('https://az765310.vo.msecnd.net/images/logos/clientLogo_' + $.parseClient().qrCloudKey + '.jpg') %>" id="<%=$.parseClient().qrCloudKey%>" class="clientLogoImg" src="images/engineerApp/JPG/clientLogo_<%=$.parseClient().qrCloudKey%>.jpg" />
+    </li>
+    <li class="list-group-item text-center" style="border-top:none;">
+        <%=building.b%>
+    </li>
+    <li id="alerts" class="list-group-item text-center" style="display:none;"></li>
+</ul>

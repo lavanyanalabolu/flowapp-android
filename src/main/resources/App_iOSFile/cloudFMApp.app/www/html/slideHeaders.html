@@ -1,0 +1,23 @@
+<div class="panel-heading">
+    <% var rightGlyph = rightGlyph || '';
+    %>
+	<div class="row clearfix slideHeaderRow">
+		<div class="col-xs-3 sh" style="">
+			<span class="pull-left slideChevron" style="<% if(typeof noLeft != 'undefined' || window.routeSlideController.slideLength < 2) { %> display:none; <% }else{} %>">
+				<div class="<%= ( typeof customLeft != 'undefined' )? customLeft : 'btnPrevSection' %>" style="" >
+					<span class="glyphicon glyphicon-chevron-left" style=""></span>
+				</div>
+			</span>
+		</div>
+		<div class="col-xs-6  text-center">
+				<h3 class="panel-title"><%= title %></h3>
+		</div>
+		<div class="col-xs-3 sh" style="">
+			<span class="pull-right slideChevron" style="<% if(typeof noRight != 'undefined' || window.routeSlideController.slideLength < 2) { %> display:none; <% }else{} %>">
+				<div class="<%= ( typeof customRight != 'undefined' )? customRight : 'btnNextSection' %>" style="" >
+					<span class="glyphicon <%= rightGlyph ? rightGlyph : 'glyphicon-chevron-right' %>" style=""></span>
+				</div>
+			</span>
+		</div>
+	</div>
+</div>

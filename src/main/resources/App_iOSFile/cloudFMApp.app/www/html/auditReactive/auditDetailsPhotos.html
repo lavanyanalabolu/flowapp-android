@@ -1,0 +1,35 @@
+
+
+<div id="phoFlex" class="photosFlex standardFlexColRowGrow">
+<% for(var i=0;i<3;i++){ %>
+	<% if(!photos[i]){ %>
+	<div class="square">
+		<div class="content p_<%=i%> btnPhoto">
+			<div class="table tPhoto" >
+				<div class="table-cell text-center ">
+					<button data-userGuid="" style="vertical-align:middle" class="btn btn-lg btn-circle btn-primary" >
+						<span class="glyphicon glyphicon-camera"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<% } else { %>
+		<% if(!!photos[i].imageURI){ %>
+		<div class="square">
+			<div class="content p_<%=i%>">
+		        <img style="opacity:.5" class="img-thumbnail" src="<%= (window.device.platform.toLowerCase() === 'android' ? 'file://' : '') + photos[i].imageURI %>"  />
+				<h4 style="position:absolute; top:50%; margin-top: -.8em; width: 100%; text-align: center">pending</h4>
+			</div>
+		</div>
+		<% } else { %>
+		<div class="square">
+			<div class="content p_<%=i%>">
+		        <img class="img-thumbnail" src="<%=serverPath%>/image2/<%=clientGuid%>/<%= photos[i].docGuid %>/JPG/150"  />
+		    </div>
+		</div>
+		<% }
+	}
+} %>
+
+</div>

@@ -1,0 +1,20 @@
+<li class="list-group-item">
+	<p class="clearfix">
+		<small class="pull-right">
+			Created By <%=n.username%> on <%=moment(n.creationDate).format('lll') %>
+		</small>
+	</p>
+	<p> <%=n.note%> </p>
+	<p> 
+	<% if ( !n.acknowledged ) { %>
+		<button class="btn btn-block btn-lg btn-success acknowledgeNote">Acknowledge</button>
+	<% } else { %>
+		<p class="clearfix">
+			<small class="pull-right">
+				Acknowledged By <%=n.acknowledgedBy%> <br>
+				<span class="pull-right"> <%=moment(n.dateAcknowledged).format('lll') %></span>
+			</small>
+		</p>
+	<% } %>
+	</p>
+</li>
