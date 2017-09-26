@@ -42,6 +42,7 @@ public class TC_Flowandriod_001 extends AndroidApplicationFunctions
 	*/
 	public void TestValidation() throws Exception{
 		try{
+			   System.out.println("in testvalidation");
 			// invocationflag= true;
 			Utility.initializeClassFields(getClass(),testCaseID);
 			//isRun = ExcelDataUtil.getControls(suiteName, testCaseID);

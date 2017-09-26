@@ -57,7 +57,9 @@ import Utilities.sendMail;
 		   }
 		   if(platformName.equals("Android"))
 			   {
+			   
 			   browserName = ExcelDataUtil.getColumnValue(System.getProperty("user.dir")+Utility.GetValue("AutomationControlExcelPath"),"Browser(Browser,Chrome or N.A. [if running apps])", "Browsers",1);
+			   System.out.println("after onstart driver");
 			   //browserName = ExcelDataUtil.getColumnValue("C:\\Users\\Lavanya\\Desktop\\flowapp-android\\src\\main\\resources\\ExcelFiles\\AutomationControlSheet.xls","Browser(Browser,Chrome or N.A. [if running apps])", "Browsers",1);
 			   if(browserName.equals("N.A."))
 				   {
@@ -202,6 +204,7 @@ import Utilities.sendMail;
         invokedMethodHashes.add(method.hashCode());
 		if(platformName.equalsIgnoreCase("Android")&&(browserName.equals("N.A.")))
 		 {
+			   System.out.println("in before invocation");
 	 DriverUtil.getAndroidDriver(browserName);
 		 }
 else if(platformName.equalsIgnoreCase("IOS")&&(browserName.equals("N.A.")))
