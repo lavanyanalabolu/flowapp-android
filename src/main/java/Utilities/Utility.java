@@ -398,6 +398,7 @@ public static boolean invocationflag= false;
 		
 		public static  void checkFileOpen()
 		{
+			System.out.println("in checkfileopen");
 			String fileName = System.getProperty("user.dir")+"/ExecutionReports/ExcelReport/TestResult.xls";
 		    File file = new File(fileName);
 

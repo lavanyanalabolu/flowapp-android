@@ -144,11 +144,10 @@ public class CustomSuiteRunner {
 		//testNgRun.setParallel(XmlSuite.ParallelMode.CLASSES);
 		
 		//Run 
+		
+		System.out.println("before run");
 		testNgRun.run();
-		
-		
-		
-		
+			
 	}
 	/*
 	@DataProvider
