@@ -150,7 +150,7 @@
           
           <suiteXmlFiles>
           	<!--Configuration of xml file that is picked by maven to run TestNG suite-->
-            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+            <suiteXmlFile>src/main/resources/ExcelFiles/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

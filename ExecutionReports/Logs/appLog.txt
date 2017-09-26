@@ -35359,3 +35359,25 @@
 2017-09-26 20:23:17 INFO  - click on login with email to navigate to login page-PASS 
 2017-09-26 20:23:22 INFO  - allow pop up if visible-PASS 
 2017-09-26 20:23:30 INFO  - write the username in email field-PASS 
+2017-09-26 20:34:31 INFO  - *********************New Suite Started*********************
+2017-09-26 20:34:31 INFO  - Platform Name:-Android
+2017-09-26 20:34:33 INFO  - Total Time taken in(seconds):1
+2017-09-26 20:34:44 INFO  - *********************New Suite Started*********************
+2017-09-26 20:34:44 INFO  - Platform Name:-Android
+2017-09-26 20:35:06 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 20:35:06 INFO  - Create a task
+2017-09-26 20:35:35 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 20:35:40 INFO  - allow pop up if visible-PASS 
+2017-09-26 20:38:05 INFO  - null-FAIL 
+2017-09-26 20:38:08 INFO  - Total Time taken in(seconds):204
+2017-09-26 20:38:09 INFO  - Total Time taken in(seconds):1
+2017-09-26 20:38:11 INFO  - Total Time taken in(seconds):2
+2017-09-26 20:38:13 INFO  - *********************Suite Ended*********************
+2017-09-26 20:38:25 INFO  - *********************New Suite Started*********************
+2017-09-26 20:38:25 INFO  - Platform Name:-Android
+2017-09-26 20:38:27 INFO  - Total Time taken in(seconds):1
+2017-09-26 20:38:44 INFO  - *********************New Suite Started*********************
+2017-09-26 20:38:44 INFO  - Platform Name:-Android
+2017-09-26 20:39:07 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 20:39:07 INFO  - Create a task
+2017-09-26 20:39:33 INFO  - click on login with email to navigate to login page-PASS 
