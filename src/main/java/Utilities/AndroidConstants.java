@@ -1,4 +1,4 @@
-package Flow.Objects;
+package Utilities;
 
 import org.openqa.selenium.By;
 

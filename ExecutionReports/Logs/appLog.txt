@@ -35008,3 +35008,20 @@
 2017-09-26 17:41:28 INFO  - click on signin-PASS 
 2017-09-26 17:41:46 INFO  - click on the image-PASS 
 2017-09-26 17:41:49 INFO  - click on image2 to change the environment -PASS 
+2017-09-26 18:02:55 INFO  - *********************New Suite Started*********************
+2017-09-26 18:02:55 INFO  - Platform Name:-Android
+2017-09-26 18:03:17 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 18:03:17 INFO  - Create a task
+2017-09-26 18:03:30 INFO  - click on the image-PASS 
+2017-09-26 18:03:33 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 18:03:36 INFO  - click more options to see logout -PASS 
+2017-09-26 18:03:38 INFO  - click on logout-PASS 
+2017-09-26 18:03:42 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 18:03:47 INFO  - allow pop up if visible-PASS 
+2017-09-26 18:03:56 INFO  - write the username in email field-PASS 
+2017-09-26 18:04:02 INFO  - write the password in password field-PASS 
+2017-09-26 18:04:04 INFO  - click on signin-PASS 
+2017-09-26 18:04:22 INFO  - click on the image-PASS 
+2017-09-26 18:04:26 INFO  - click on image2 to change the environment -PASS 
+2017-09-26 18:04:29 INFO  - click on workspace to change it to QA environment -PASS 
+2017-09-26 18:04:32 INFO  - click on project to create a new one -PASS 
