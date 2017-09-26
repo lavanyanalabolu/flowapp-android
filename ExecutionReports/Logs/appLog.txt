@@ -35065,3 +35065,87 @@
 2017-09-26 18:16:33 INFO  - Total Time taken in(seconds):1
 2017-09-26 18:16:35 INFO  - Total Time taken in(seconds):2
 2017-09-26 18:16:37 INFO  - *********************Suite Ended*********************
+2017-09-26 18:28:27 INFO  - *********************New Suite Started*********************
+2017-09-26 18:28:28 INFO  - Platform Name:-Android
+2017-09-26 18:28:54 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 18:28:54 INFO  - Create a task
+2017-09-26 18:29:22 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 18:29:27 INFO  - allow pop up if visible-PASS 
+2017-09-26 18:29:35 INFO  - write the username in email field-PASS 
+2017-09-26 18:29:41 INFO  - write the password in password field-PASS 
+2017-09-26 18:29:43 INFO  - click on signin-PASS 
+2017-09-26 18:30:02 INFO  - click on the image-PASS 
+2017-09-26 18:30:06 INFO  - click on image2 to change the environment -PASS 
+2017-09-26 18:30:09 INFO  - click on workspace to change it to QA environment -PASS 
+2017-09-26 18:30:12 INFO  - click on project to create a new one -PASS 
+2017-09-26 18:31:03 INFO  - *********************New Suite Started*********************
+2017-09-26 18:31:03 INFO  - Platform Name:-Android
+2017-09-26 18:31:31 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 18:31:31 INFO  - Create a task
+2017-09-26 18:31:45 INFO  - click on the image-PASS 
+2017-09-26 18:31:48 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 18:31:51 INFO  - click more options to see logout -PASS 
+2017-09-26 18:31:53 INFO  - click on logout-PASS 
+2017-09-26 18:31:57 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 18:32:02 INFO  - allow pop up if visible-PASS 
+2017-09-26 18:32:12 INFO  - write the username in email field-PASS 
+2017-09-26 18:32:19 INFO  - write the password in password field-PASS 
+2017-09-26 18:32:20 INFO  - click on signin-PASS 
+2017-09-26 18:32:39 INFO  - click on the image-PASS 
+2017-09-26 18:32:42 INFO  - click on image2 to change the environment -PASS 
+2017-09-26 18:32:45 INFO  - click on workspace to change it to QA environment -PASS 
+2017-09-26 18:32:48 INFO  - click on project to create a new one -PASS 
+2017-09-26 18:32:57 INFO  - write project name -PASS 
+2017-09-26 18:33:09 INFO  - assign project toeveryone-PASS 
+2017-09-26 18:33:11 INFO  - click on create-PASS 
+2017-09-26 18:33:15 INFO  - click on private task-PASS 
+2017-09-26 18:33:19 INFO  - click ontask creator-PASS 
+2017-09-26 18:33:26 INFO  - write the task name-PASS 
+2017-09-26 18:33:34 INFO  - click on to give project name-PASS 
+2017-09-26 18:33:41 INFO  - write the project name in which you wanted to create task-PASS 
+2017-09-26 18:33:43 INFO  - click on project to be selcted-PASS 
+2017-09-26 18:33:54 INFO  - click to subscriber-PASS 
+2017-09-26 18:34:03 INFO  - input subscriber name-PASS 
+2017-09-26 18:34:04 INFO  - click to subscriber selected-PASS 
+2017-09-26 18:34:12 INFO  - clickok-PASS 
+2017-09-26 18:34:14 INFO  - click to subscriber-PASS 
+2017-09-26 18:34:18 INFO  - click on back-PASS 
+2017-09-26 18:34:27 INFO  - click on the image-PASS 
+2017-09-26 18:34:36 INFO  - click on the image-PASS 
+2017-09-26 18:46:10 INFO  - *********************New Suite Started*********************
+2017-09-26 18:46:10 INFO  - Platform Name:-Android
+2017-09-26 18:46:29 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 18:46:29 INFO  - Create a task
+2017-09-26 18:46:40 INFO  - click on the image-PASS 
+2017-09-26 18:46:43 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 18:46:46 INFO  - click more options to see logout -PASS 
+2017-09-26 18:46:47 INFO  - click on logout-PASS 
+2017-09-26 18:46:50 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 18:46:56 INFO  - allow pop up if visible-PASS 
+2017-09-26 18:47:04 INFO  - write the username in email field-PASS 
+2017-09-26 18:47:10 INFO  - *********************New Suite Started*********************
+2017-09-26 18:47:10 INFO  - Platform Name:-Android
+2017-09-26 18:47:10 INFO  - write the password in password field-PASS 
+2017-09-26 18:47:11 INFO  - Total Time taken in(seconds):0
+2017-09-26 18:47:12 INFO  - click on signin-PASS 
+2017-09-26 18:47:51 INFO  - *********************New Suite Started*********************
+2017-09-26 18:47:51 INFO  - Platform Name:-Android
+2017-09-26 18:48:15 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 18:48:15 INFO  - Create a task
+2017-09-26 18:48:27 INFO  - click on the image-PASS 
+2017-09-26 18:48:30 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 18:48:33 INFO  - click more options to see logout -PASS 
+2017-09-26 18:48:35 INFO  - click on logout-PASS 
+2017-09-26 18:48:38 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 18:48:44 INFO  - allow pop up if visible-PASS 
+2017-09-26 18:48:51 INFO  - write the username in email field-PASS 
+2017-09-26 18:48:57 INFO  - write the password in password field-PASS 
+2017-09-26 18:48:59 INFO  - click on signin-PASS 
+2017-09-26 18:49:17 INFO  - click on the image-PASS 
+2017-09-26 18:49:21 INFO  - click on image2 to change the environment -PASS 
+2017-09-26 18:49:23 INFO  - click on workspace to change it to QA environment -PASS 
+2017-09-26 18:49:26 INFO  - click on project to create a new one -PASS 
+2017-09-26 18:49:35 INFO  - write project name -PASS 
+2017-09-26 18:49:46 INFO  - assign project toeveryone-PASS 
+2017-09-26 18:49:48 INFO  - click on create-PASS 
+2017-09-26 18:49:51 INFO  - click on private task-PASS 
