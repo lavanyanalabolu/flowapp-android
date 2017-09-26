@@ -11,6 +11,11 @@
   </test> <!-- FunctionalPhase1Priority1-Tests -->
   <test name="FunctionalPhase1Priority1-Tests(failed)">
     <classes>
+      <class name="com.flow.andriod.TC_Flowandriod_001">
+        <methods>
+          <include name="TestValidation"/>
+        </methods>
+      </class> <!-- com.flow.andriod.TC_Flowandriod_001 -->
       <class name="com.flow.andriod.TC_Flowandriod_003">
         <methods>
           <include name="TestValidation"/>

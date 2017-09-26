@@ -7014,3 +7014,21 @@ Session ID: e8a29d86-6983-44f9-99ff-5f77f701ad62
 2017-09-26 15:14:26 ERROR - -----------------------------------------------------------------------
 2017-09-26 15:16:56 ERROR - expected [true] but found [false]
 2017-09-26 15:16:56 ERROR - -----------------------------------------------------------------------
+2017-09-26 18:16:31 ERROR - An unknown server-side error occurred while processing the command. Original error: UiAUtomator shut down unexpectedly (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 515 milliseconds
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.getflow.tasks.next, deviceName=4200088eca576300, platform=LINUX, deviceUDID=4200088eca576300, desired={app=C:\Users\Lavanya\Desktop\flowapp-android\src\main\resources\App_APK\base.apk, newCommandTimeout=300, platformVersion=6.0.1, automationName=Appium, browserName=, platformName=Android, udid=4200088eca576300, deviceName=Android 6.0}, newCommandTimeout=300, platformVersion=6.0.1, webStorageEnabled=false, automationName=Appium, takesScreenshot=true, browserName=, javascriptEnabled=true, platformName=Android, udid=4200088eca576300, deviceManufacturer=samsung, app=C:\Users\Lavanya\Desktop\flowapp-android\src\main\resources\App_APK\base.apk, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, appWaitPackage=com.getflow.tasks.next, appWaitActivity=com.getflow.tasks.ui.activities.ActFirst, databaseEnabled=false, appActivity=com.getflow.tasks.ui.activities.ActFirst, locationContextEnabled=false, deviceModel=SM-J210F}]
+Session ID: 2c806b76-898d-490e-9a0b-ce1516e43b2a
+2017-09-26 18:16:31 ERROR - -----------------------------------------------------------------------
+2017-09-26 18:16:33 ERROR - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused: connect
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver
+2017-09-26 18:16:33 ERROR - -----------------------------------------------------------------------
+2017-09-26 18:16:35 ERROR - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused: connect
+Build info: version: '3.0.0', revision: '350cf60', time: '2016-10-13 10:48:57 -0700'
+System info: host: 'DSHYD-084', ip: '172.16.3.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: AndroidDriver
+2017-09-26 18:16:35 ERROR - -----------------------------------------------------------------------

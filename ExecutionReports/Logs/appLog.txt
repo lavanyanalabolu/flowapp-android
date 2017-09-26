@@ -35025,3 +35025,43 @@
 2017-09-26 18:04:26 INFO  - click on image2 to change the environment -PASS 
 2017-09-26 18:04:29 INFO  - click on workspace to change it to QA environment -PASS 
 2017-09-26 18:04:32 INFO  - click on project to create a new one -PASS 
+2017-09-26 18:12:37 INFO  - *********************New Suite Started*********************
+2017-09-26 18:12:37 INFO  - Platform Name:-Android
+2017-09-26 18:13:05 INFO  - **********Test Started:TC_Flowandriod_001**********
+2017-09-26 18:13:05 INFO  - Create a task
+2017-09-26 18:13:17 INFO  - click on the image-PASS 
+2017-09-26 18:13:20 INFO  - click on user to navigate to his accout details page -PASS 
+2017-09-26 18:13:24 INFO  - click more options to see logout -PASS 
+2017-09-26 18:13:26 INFO  - click on logout-PASS 
+2017-09-26 18:13:30 INFO  - click on login with email to navigate to login page-PASS 
+2017-09-26 18:13:35 INFO  - allow pop up if visible-PASS 
+2017-09-26 18:13:44 INFO  - write the username in email field-PASS 
+2017-09-26 18:13:51 INFO  - write the password in password field-PASS 
+2017-09-26 18:13:53 INFO  - click on signin-PASS 
+2017-09-26 18:14:11 INFO  - click on the image-PASS 
+2017-09-26 18:14:15 INFO  - click on image2 to change the environment -PASS 
+2017-09-26 18:14:18 INFO  - click on workspace to change it to QA environment -PASS 
+2017-09-26 18:14:21 INFO  - click on project to create a new one -PASS 
+2017-09-26 18:14:29 INFO  - write project name -PASS 
+2017-09-26 18:14:39 INFO  - assign project toeveryone-PASS 
+2017-09-26 18:14:41 INFO  - click on create-PASS 
+2017-09-26 18:14:45 INFO  - click on private task-PASS 
+2017-09-26 18:14:49 INFO  - click ontask creator-PASS 
+2017-09-26 18:14:56 INFO  - write the task name-PASS 
+2017-09-26 18:15:03 INFO  - click on to give project name-PASS 
+2017-09-26 18:15:12 INFO  - write the project name in which you wanted to create task-PASS 
+2017-09-26 18:15:14 INFO  - click on project to be selcted-PASS 
+2017-09-26 18:15:25 INFO  - click to subscriber-PASS 
+2017-09-26 18:15:32 INFO  - input subscriber name-PASS 
+2017-09-26 18:15:34 INFO  - click to subscriber selected-PASS 
+2017-09-26 18:15:42 INFO  - clickok-PASS 
+2017-09-26 18:15:44 INFO  - click to subscriber-PASS 
+2017-09-26 18:15:48 INFO  - click on back-PASS 
+2017-09-26 18:15:57 INFO  - click on the image-PASS 
+2017-09-26 18:16:06 INFO  - click on the image-PASS 
+2017-09-26 18:16:29 INFO  - click more options to see logout -PASS 
+2017-09-26 18:16:31 INFO  - click on logout-PASS 
+2017-09-26 18:16:31 INFO  - Total Time taken in(seconds):233
+2017-09-26 18:16:33 INFO  - Total Time taken in(seconds):1
+2017-09-26 18:16:35 INFO  - Total Time taken in(seconds):2
+2017-09-26 18:16:37 INFO  - *********************Suite Ended*********************
